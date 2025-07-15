@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jadwal Kegiatan Keagamaan RT 04 RW 021</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+    <body style="opacity: 0; transition: opacity 0.7s"></body>
+    <header>
+      <nav>
+        <div class="navbar-content">
+          <a href="../../index.html" id="logo-home" class="logo">🌐 Logo</a>
+          <ul>
+            <li>
+              <a href="/assets/pages/jadwal.html" id="nav-jadwal">Jadwal</a>
+            </li>
+            <li>
+              <a href="/assets/pages/lokasi.html" id="nav-lokasi">Lokasi</a>
+            </li>
+            <li>
+              <a href="/assets/pages/hadist.html" id="nav-hadist">Hadist</a>
+            </li>
+            <li>
+              <a href="/assets/pages/tentangKami.html">Tentang Kami</a>
+            </li>
+            <li>
+              <a href="#kontak-dkm" id="nav-kontak">Kontak</a>
+            </li>
+          </ul>
+          <button id="toggle-theme" class="theme-toggle-btn" aria-label="Ganti Mode" title="Ganti Mode">🌙</button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div id="page-overlay" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(255,255,255,0.5);z-index:1500;"></div>
+      <div
+        id="page-spinner"
+        class="spinner"
+        style="
+          display: none;
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 2000;
+          pointer-events: none;
+        "
+      ></div>
+      <h1>KUMPULAN HADIST</h1>
+      <div id="detail-container" class="detail-container">
+        <h2 id="detail-title">Memuat...</h2>
+        <p id="detail-content" style="font-size:2.1rem; font-family:'Amiri', serif; text-align:right; direction:rtl; margin-bottom:18px;"></p>
+        <p id="detail-reference"></p>
+        <button
+          id="back-hadist"
+          class="mt-2 mb-8 px-4 py-2 bg-yellow-400 text-black font-semibold rounded hover:bg-yellow-300 transition"
+          onclick="showPageSpinner(); window.location.href='hadist.html'"
+        >
+          Kembali ke Kumpulan Hadist
+        </button>
+      </div>
+    </main>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const hadistId = parseInt(urlParams.get("id"));
+
+      const detailTitle = document.getElementById("detail-title");
+      const detailContent = document.getElementById("detail-content");
+      const detailReference = document.getElementById("detail-reference");
+
+      fetch("/assets/data/hadist.json")
+        .then((response) => response.json())
+        .then((data) => {
+          const hadiths = data.hadiths;
+          const hadist = hadiths.find((h) => h.number === hadistId);
+          if (hadist) {
+            detailTitle.textContent = `Hadist ${hadist.number}`;
+            detailContent.textContent = hadist.arab;
+            detailReference.textContent =
+              hadist.translation || "Tidak ada terjemahan.";
+          } else {
+            detailTitle.textContent = "Hadist Tidak Ditemukan";
+            detailContent.textContent = "";
+            detailReference.textContent = "";
+          }
+        })
+        .catch((err) => {
+          console.error("Gagal memuat detail hadist:", err);
+          detailTitle.textContent = "Gagal memuat data.";
+        });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.body.style.opacity = 1;
+        // Navbar menu aktif otomatis (robust)
+        var path = window.location.pathname;
+        if (path.match(/jadwal/i)) {
+          var navJadwal = document.getElementById("nav-jadwal");
+          if (navJadwal) navJadwal.classList.add("active");
+        }
+        if (path.match(/lokasi/i)) {
+          var navLokasi = document.getElementById("nav-lokasi");
+          if (navLokasi) navLokasi.classList.add("active");
+        }
+        if (path.match(/hadist/i)) {
+          var navHadist = document.getElementById("nav-hadist");
+          if (navHadist) navHadist.classList.add("active");
+        }
+        // Button kembali ke kumpulan hadist
+        var backBtn = document.getElementById("back-hadist");
+        if (backBtn) {
+          backBtn.addEventListener("click", function () {
+            showPageSpinner();
+            window.location.href = "hadist.html";
+          });
+        }
+      });
+    </script>
+    <script>
+    const themeBtn = document.getElementById('toggle-theme');
+    function setTheme(dark) {
+      if (dark) {
+        document.body.classList.add('dark-mode');
+        themeBtn.textContent = "☀️";
+        localStorage.setItem('theme', 'dark');
+      } else {
+        document.body.classList.remove('dark-mode');
+        themeBtn.textContent = "🌙";
+        localStorage.setItem('theme', 'light');
+      }
+    }
+    themeBtn.addEventListener('click', () => {
+      setTheme(!document.body.classList.contains('dark-mode'));
+    });
+    document.addEventListener('DOMContentLoaded', () => {
+      setTheme(localStorage.getItem('theme') === 'dark');
+    });
+  </script>
+    <script>
+    function showPageSpinner() {
+      var spinner = document.getElementById("page-spinner");
+      var overlay = document.getElementById("page-overlay");
+      if (spinner) spinner.style.removeProperty("display");
+      if (overlay) overlay.style.display = "block";
+    }
+    function hidePageSpinner() {
+      var spinner = document.getElementById("page-spinner");
+      var overlay = document.getElementById("page-overlay");
+      if (spinner) spinner.style.display = "none";
+      if (overlay) overlay.style.display = "none";
+    }
+
+    // Efek smooth transition (fade-in) pada body saat load
+    document.addEventListener("DOMContentLoaded", function () {
+      setTimeout(function () {
+        document.body.style.opacity = 1;
+        hidePageSpinner();
+      }, 80);
+    });
+
+    // Spinner saat klik link/menu (navigasi antar halaman)
+    document.body.addEventListener(
+      "click",
+      function (e) {
+        var a = e.target.closest("a");
+        if (
+          a &&
+          a.href &&
+          !a.target &&
+          a.hostname === location.hostname
+        ) {
+          // Jangan tampilkan spinner jika hanya scroll ke anchor di halaman yang sama
+          if (
+            a.hash && 
+            (a.pathname === location.pathname || a.pathname === "" || a.pathname === "/") &&
+            a.hash !== "" &&
+            a.href.split("#")[0] === location.href.split("#")[0]
+          ) {
+            // Anchor link, tidak perlu spinner
+            return;
+          }
+          // Tampilkan spinner hanya jika benar-benar pindah halaman
+          if (a.href !== location.href && !a.href.endsWith("#")) {
+            showPageSpinner();
+            document.body.style.opacity = 0.3;
+          }
+        }
+      },
+      true
+    );
+    document.addEventListener("scroll", function() {
+    var footer = document.getElementById("kontak-dkm");
+    var navKontak = document.getElementById("nav-kontak");
+    if (!footer || !navKontak) return;
+    var rect = footer.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      navKontak.classList.add("active");
+    } else {
+      navKontak.classList.remove("active");
+    }
+  });
+  </script>
+  <footer id="kontak-dkm" style="background: linear-gradient(90deg, #357abd 0%, #1a2a47 100%); color: #fff; padding: 32px 0 16px 0; margin-top: 48px;">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 24px; padding: 0 24px;">
+      <!-- Logo & Nama -->
+      <div style="flex: 1 1 200px; min-width: 180px;">
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <img src="/assets/img/logo-masjid.png" alt="Logo Masjid" style="width: 48px; height: 48px; border-radius: 50%; background: #fff; object-fit: cover;" />
+          <div>
+            <div style="font-size: 1.2rem; font-weight: bold;">DKM Masjid RT 04 RW 021</div>
+            <div style="font-size: 0.95rem;">Desa Bojong Gede</div>
+          </div>
+        </div>
+      </div>
+      <!-- Alamat & Kontak -->
+      <div style="flex: 2 1 320px; min-width: 220px;">
+        <div style="margin-bottom: 8px;">
+          <b>Alamat:</b><br>
+          Jl. Masjid RT 04 RW 021, Desa Bojong Gede, Kec. Bojong Gede, Kab. Bogor, Jawa Barat 16922
+        </div>
+        <div>
+          <b>Kontak DKM:</b><br>
+          <a href="tel:+6281234567890" style="color: #ffd84d; text-decoration: underline;">+62 812-3456-7890</a>
+        </div>
+      </div>
+      <!-- Map -->
+      <div style="flex: 1 1 160px; min-width: 120px; text-align: center;">
+        <a href="https://maps.app.goo.gl/1dTUben6EVyM1gRZ6" target="_blank" rel="noopener" title="Lihat lokasi di Google Maps">
+          <img src="/assets/img/map-preview.png" alt="Map Lokasi Masjid" style="width: 120px; height: 80px; border-radius: 8px; border: 2px solid #ffd84d; object-fit: cover; box-shadow: 0 2px 8px rgba(0,0,0,0.12);" />
+          <div style="margin-top: 4px; color: #ffd84d; font-size: 0.95rem;">Lihat di Google Maps</div>
+        </a>
+      </div>
+    </div>
+    <div style="text-align: center; color: #ffd84d; font-size: 0.95rem; margin-top: 24px;">
+      &copy; 2025 DKM Masjid RT 04 RW 021. All rights reserved.
+    </div>
+  </footer>
+  </body>
+</html>
