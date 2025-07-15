@@ -5,69 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tentang Kami</title>
     <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet" />
   </head>
   <body style="opacity: 0; transition: opacity 0.7s">
     <header>
-      <nav>
-        <div class="navbar-content">
-          <a href="../../index.html" id="logo-home" class="logo">🌐 Logo</a>
-          <ul>
+      <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center max-w-6xl">
+          <a href="/index.html" id="logo-home" class="**text-white** text-2xl font-bold">🌐 Logo</a>
+
+          <button id="menu-toggle" class="lg:hidden focus:outline-none" aria-label="Toggle menu">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="#fff"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+
+          <ul
+            id="nav-links"
+            class="hidden lg:flex lg:items-center space-x-4 flex-col lg:flex-row mt-4 lg:mt-0 w-full lg:w-auto">
             <li>
-              <a href="/assets/pages/jadwal.html" id="nav-jadwal">Jadwal</a>
+              <a
+                href="/assets/pages/jadwal.html"
+                id="nav-jadwal"
+                class="block py-2 px-3 ml-4 **text-white** hover:bg-gray-700 rounded transition duration-200 **text-center**"
+                >Jadwal</a
+              >
             </li>
             <li>
-              <a href="/assets/pages/lokasi.html" id="nav-lokasi">Lokasi</a>
+              <a
+                href="/assets/pages/lokasi.html"
+                id="nav-lokasi"
+                class="block py-2 px-3 **text-white** hover:bg-gray-700 rounded transition duration-200 **text-center**"
+                >Lokasi</a
+              >
             </li>
             <li>
-              <a href="/assets/pages/hadist.html" id="nav-hadist">Hadist</a>
+              <a
+                href="/assets/pages/hadist.html"
+                id="nav-hadist"
+                class="block py-2 px-3 **text-white** hover:bg-gray-700 rounded transition duration-200 **text-center**"
+                >Hadist</a
+              >
             </li>
             <li>
               <a
                 href="/assets/pages/tentangKami.html"
-                id="nav-tentang"
-                class="active"
+                class="block py-2 px-3 **text-white** hover:bg-gray-700 rounded transition duration-200 **text-center** active"
                 >Tentang Kami</a
               >
             </li>
             <li>
-              <a href="#kontak-dkm" id="nav-kontak">Kontak</a>
+              <a
+                href="#kontak-dkm"
+                id="nav-kontak"
+                class="block py-2 px-3 **text-white** hover:bg-gray-700 rounded transition duration-200 **text-center**"
+                >Kontak</a
+              >
+            </li>
+            <li>
+              <button
+                id="toggle-theme"
+                class="theme-toggle-btn block py-2 px-3 **text-white** hover:bg-gray-700 rounded transition duration-200 w-full md:w-auto flex justify-center items-center"
+                aria-label="Ganti Mode"
+                title="Ganti Mode">
+                🌙
+              </button>
             </li>
           </ul>
-          <button
-            id="toggle-theme"
-            class="theme-toggle-btn"
-            aria-label="Ganti Mode"
-            title="Ganti Mode"
-          >
-            🌙
-          </button>
         </div>
       </nav>
     </header>
-    <main class="about-main">
-      <div class="about-card">
-        <h1>Assalamu’alaikum Warahmatullahi Wabarakatuh</h1>
-        <h3>
-          Selamat Datang di Website Informasi Jadwal Kegiatan Keagamaan Islam RT
-          04 RW 021 Desa Bojonggede
-        </h3>
+    <main class="about-main p-4">
+      <div class="about-card text-justify">
+        <h1 class="text-center">Assalamu’alaikum Warahmatullahi Wabarakatuh</h1>
         <p>
-          Segala puji bagi Allah SWT atas limpahan rahmat dan karunia-Nya,
-          sehingga website ini dapat hadir sebagai media informasi kegiatan
-          keagamaan di lingkungan RT 04 RW 021, Desa Bojonggede.
+          Selamat Datang di Website Informasi Jadwal Kegiatan Keagamaan Islam RT 04 RW 021 Desa
+          Bojonggede. <br />
+          <br />Segala puji bagi Allah SWT atas limpahan rahmat dan karunia-Nya, sehingga website
+          ini dapat hadir sebagai media informasi kegiatan keagamaan di lingkungan RT 04 RW 021,
+          Desa Bojonggede.
         </p>
         <br />
         <p>
-          Website ini dirancang untuk mempermudah warga dalam mengetahui jadwal
-          kegiatan keagamaan seperti pengajian, kajian Subuh, Latihan qasidah
-          peringatan hari besar Islam, serta berbagai kegiatan lainnya yang
-          dilaksanakan secara rutin.
+          Website ini dirancang untuk mempermudah warga dalam mengetahui jadwal kegiatan keagamaan
+          seperti pengajian, kajian Subuh, Latihan qasidah peringatan hari besar Islam, serta
+          berbagai kegiatan lainnya yang dilaksanakan secara rutin.
         </p>
         <br />
         <p>
-          Harapan kami, kehadiran sistem ini dapat meningkatkan partisipasi
-          masyarakat, memperkuat ukhuwah Islamiyah, dan menjadikan kegiatan
-          keagamaan lebih terorganisir, efisien, serta transparan.
+          Harapan kami, kehadiran sistem ini dapat meningkatkan partisipasi masyarakat, memperkuat
+          ukhuwah Islamiyah, dan menjadikan kegiatan keagamaan lebih terorganisir, efisien, serta
+          transparan.
         </p>
         <br />
         <p>Terima kasih atas perhatian dan kerjasamanya.</p>
@@ -82,8 +120,7 @@
         color: #fff;
         padding: 32px 0 16px 0;
         margin-top: 48px;
-      "
-    >
+      ">
       <div
         style="
           max-width: 1200px;
@@ -94,8 +131,7 @@
           justify-content: space-between;
           gap: 24px;
           padding: 0 24px;
-        "
-      >
+        ">
         <!-- Logo & Nama -->
         <div style="flex: 1 1 200px; min-width: 180px">
           <div style="display: flex; align-items: center; gap: 12px">
@@ -108,12 +144,9 @@
                 border-radius: 50%;
                 background: #fff;
                 object-fit: cover;
-              "
-            />
+              " />
             <div>
-              <div style="font-size: 1.2rem; font-weight: bold">
-                DKM Masjid RT 04 RW 021
-              </div>
+              <div style="font-size: 1.2rem; font-weight: bold">DKM Masjid RT 04 RW 021</div>
               <div style="font-size: 0.95rem">Desa Bojong Gede</div>
             </div>
           </div>
@@ -122,14 +155,12 @@
         <div style="flex: 2 1 320px; min-width: 220px">
           <div style="margin-bottom: 8px">
             <b>Alamat:</b><br />
-            Jl. Masjid RT 04 RW 021, Desa Bojong Gede, Kec. Bojong Gede, Kab.
-            Bogor, Jawa Barat 16922
+            Jl. Masjid RT 04 RW 021, Desa Bojong Gede, Kec. Bojong Gede, Kab. Bogor, Jawa Barat
+            16922
           </div>
           <div>
             <b>Kontak DKM:</b><br />
-            <a
-              href="tel:+6281234567890"
-              style="color: #ffd84d; text-decoration: underline"
+            <a href="tel:+6281234567890" style="color: #ffd84d; text-decoration: underline"
               >+62 812-3456-7890</a
             >
           </div>
@@ -140,8 +171,7 @@
             href="https://maps.app.goo.gl/1nsqZLNS2VxvRgS4A"
             target="_blank"
             rel="noopener"
-            title="Lihat lokasi di Google Maps"
-          >
+            title="Lihat lokasi di Google Maps">
             <img
               src="/assets/img/maps.png"
               alt="Map Lokasi Masjid"
@@ -152,44 +182,106 @@
                 border: 2px solid #ffd84d;
                 object-fit: cover;
                 box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
-              "
-            />
+              " />
             <div style="margin-top: 4px; color: #ffd84d; font-size: 0.95rem">
               Lihat di Google Maps
             </div>
           </a>
         </div>
       </div>
-      <div
-        style="
-          text-align: center;
-          color: #ffd84d;
-          font-size: 0.95rem;
-          margin-top: 24px;
-        "
-      >
+      <div style="text-align: center; color: #ffd84d; font-size: 0.95rem; margin-top: 24px">
         &copy; 2025 DKM Masjid RT 04 RW 021. All rights reserved.
       </div>
     </footer>
+
+    <script>
+      // Navbar toggle for responsive menu
+      document.addEventListener('DOMContentLoaded', function () {
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+        const menuIconPath = menuToggle.querySelector('svg path'); // Get the path element of the SVG
+
+        // SVG path data for hamburger and close icon
+        const hamburgerPath = 'M4 6h16M4 12h16M4 18h16';
+        const closePath = 'M6 18L18 6M6 6l12 12';
+
+        if (menuToggle && navLinks && menuIconPath) {
+          menuToggle.addEventListener('click', function () {
+            const isHidden = navLinks.classList.contains('hidden');
+
+            // Toggle visibility and positioning classes
+            navLinks.classList.toggle('hidden');
+            navLinks.classList.toggle('flex');
+            navLinks.classList.toggle('absolute');
+            navLinks.classList.toggle('top-16');
+            navLinks.classList.toggle('left-0');
+            navLinks.classList.toggle('bg-gray-800');
+            navLinks.classList.toggle('p-4');
+            navLinks.classList.toggle('shadow-lg');
+            navLinks.classList.toggle('z-10');
+
+            // Change the SVG icon based on menu state
+            if (isHidden) {
+              menuIconPath.setAttribute('d', closePath); // Menu is opening, show close icon
+            } else {
+              menuIconPath.setAttribute('d', hamburgerPath); // Menu is closing, show hamburger icon
+            }
+          });
+
+          // Function to close the menu and revert icon
+          const closeMenu = () => {
+            if (!navLinks.classList.contains('hidden')) {
+              navLinks.classList.add('hidden');
+              navLinks.classList.remove(
+                'flex',
+                'absolute',
+                'top-16',
+                'left-0',
+                'bg-gray-800',
+                'p-4',
+                'shadow-lg',
+                'z-10'
+              );
+              menuIconPath.setAttribute('d', hamburgerPath); // Revert to hamburger icon
+            }
+          };
+
+          // Close the menu when a link is clicked
+          navLinks.querySelectorAll('a').forEach((link) => {
+            link.addEventListener('click', closeMenu);
+          });
+
+          // Close menu when clicking outside
+          document.addEventListener('click', (event) => {
+            const isClickInsideNav =
+              navLinks.contains(event.target) || menuToggle.contains(event.target);
+            if (!isClickInsideNav) {
+              // Only close if the click is outside
+              closeMenu();
+            }
+          });
+        }
+      });
+    </script>
     <script>
       // Theme toggle
-      const themeBtn = document.getElementById("toggle-theme");
+      const themeBtn = document.getElementById('toggle-theme');
       function setTheme(dark) {
         if (dark) {
-          document.body.classList.add("dark-mode");
-          themeBtn.textContent = "☀️";
-          localStorage.setItem("theme", "dark");
+          document.body.classList.add('dark-mode');
+          themeBtn.textContent = '☀️';
+          localStorage.setItem('theme', 'dark');
         } else {
-          document.body.classList.remove("dark-mode");
-          themeBtn.textContent = "🌙";
-          localStorage.setItem("theme", "light");
+          document.body.classList.remove('dark-mode');
+          themeBtn.textContent = '🌙';
+          localStorage.setItem('theme', 'light');
         }
       }
-      themeBtn.addEventListener("click", () => {
-        setTheme(!document.body.classList.contains("dark-mode"));
+      themeBtn.addEventListener('click', () => {
+        setTheme(!document.body.classList.contains('dark-mode'));
       });
-      document.addEventListener("DOMContentLoaded", () => {
-        setTheme(localStorage.getItem("theme") === "dark");
+      document.addEventListener('DOMContentLoaded', () => {
+        setTheme(localStorage.getItem('theme') === 'dark');
         document.body.style.opacity = 1;
       });
     </script>

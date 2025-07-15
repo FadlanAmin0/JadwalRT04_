@@ -27,27 +27,77 @@
       ></div>
   <!-- ...lanjutan konten... -->
     <header>
-      <nav>
-        <div class="navbar-content">
-          <a href="../../index.html" id="logo-home" class="logo">🌐 Logo</a>
-          <ul>
+      <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center max-w-6xl">
+          <a href="/index.html" id="logo-home" class="**text-white** text-2xl font-bold">🌐 Logo</a>
+
+          <button id="menu-toggle" class="lg:hidden focus:outline-none" aria-label="Toggle menu">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="#fff"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+
+          <ul
+            id="nav-links"
+            class="hidden lg:flex lg:items-center space-x-4 flex-col lg:flex-row mt-4 lg:mt-0 w-full lg:w-auto">
             <li>
-              <a href="/assets/pages/jadwal.html" id="nav-jadwal">Jadwal</a>
+              <a
+                href="/assets/pages/jadwal.html"
+                id="nav-jadwal"
+                class="block py-2 px-3 ml-4 **text-white** hover:bg-gray-700 rounded transition duration-200 **text-center**"
+                >Jadwal</a
+              >
             </li>
             <li>
-              <a href="/assets/pages/lokasi.html" id="nav-lokasi">Lokasi</a>
+              <a
+                href="/assets/pages/lokasi.html"
+                id="nav-lokasi"
+                class="block py-2 px-3 **text-white** hover:bg-gray-700 rounded transition duration-200 **text-center**"
+                >Lokasi</a
+              >
             </li>
             <li>
-              <a href="/assets/pages/hadist.html" id="nav-hadist">Hadist</a>
+              <a
+                href="/assets/pages/hadist.html"
+                id="nav-hadist"
+                class="block py-2 px-3 **text-white** hover:bg-gray-700 rounded transition duration-200 **text-center**"
+                >Hadist</a
+              >
             </li>
             <li>
-              <a href="/assets/pages/tentangKami.html">Tentang Kami</a>
+              <a
+                href="/assets/pages/tentangKami.html"
+                class="block py-2 px-3 **text-white** hover:bg-gray-700 rounded transition duration-200 **text-center**"
+                >Tentang Kami</a
+              >
             </li>
             <li>
-              <a href="#kontak-dkm" id="nav-kontak">Kontak</a>
+              <a
+                href="#kontak-dkm"
+                id="nav-kontak"
+                class="block py-2 px-3 **text-white** hover:bg-gray-700 rounded transition duration-200 **text-center**"
+                >Kontak</a
+              >
+            </li>
+            <li>
+              <button
+                id="toggle-theme"
+                class="theme-toggle-btn block py-2 px-3 **text-white** hover:bg-gray-700 rounded transition duration-200 w-full md:w-auto flex justify-center items-center"
+                aria-label="Ganti Mode"
+                title="Ganti Mode">
+                🌙
+              </button>
             </li>
           </ul>
-          <button id="toggle-theme" class="theme-toggle-btn" aria-label="Ganti Mode" title="Ganti Mode">🌙</button>
         </div>
       </nav>
     </header>
@@ -78,6 +128,111 @@
       </div>
       <p class="instruction">Silahkan klik untuk melihat jadwal kegiatan</p>
     </main>
+    <footer id="kontak-dkm" style="background: linear-gradient(90deg, #357abd 0%, #1a2a47 100%); color: #fff; padding: 32px 0 16px 0; margin-top: 48px;">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 24px; padding: 0 24px;">
+      <!-- Logo & Nama -->
+      <div style="flex: 1 1 200px; min-width: 180px;">
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <img src="/assets/img/logo-masjid.png" alt="Logo Masjid" style="width: 48px; height: 48px; border-radius: 50%; background: #fff; object-fit: cover;" />
+          <div>
+            <div style="font-size: 1.2rem; font-weight: bold;">DKM Masjid RT 04 RW 021</div>
+            <div style="font-size: 0.95rem;">Desa Bojong Gede</div>
+          </div>
+        </div>
+      </div>
+      <!-- Alamat & Kontak -->
+      <div style="flex: 2 1 320px; min-width: 220px;">
+        <div style="margin-bottom: 8px;">
+          <b>Alamat:</b><br>
+          Jl. Masjid RT 04 RW 021, Desa Bojong Gede, Kec. Bojong Gede, Kab. Bogor, Jawa Barat 16922
+        </div>
+        <div>
+          <b>Kontak DKM:</b><br>
+          <a href="tel:+6281234567890" style="color: #ffd84d; text-decoration: underline;">+62 812-3456-7890</a>
+        </div>
+      </div>
+      <!-- Map -->
+      <div style="flex: 1 1 160px; min-width: 120px; text-align: center;">
+        <a href="https://maps.app.goo.gl/1dTUben6EVyM1gRZ6" target="_blank" rel="noopener" title="Lihat lokasi di Google Maps">
+          <img src="/assets/img/map-preview.png" alt="Map Lokasi Masjid" style="width: 120px; height: 80px; border-radius: 8px; border: 2px solid #ffd84d; object-fit: cover; box-shadow: 0 2px 8px rgba(0,0,0,0.12);" />
+          <div style="margin-top: 4px; color: #ffd84d; font-size: 0.95rem;">Lihat di Google Maps</div>
+        </a>
+      </div>
+    </div>
+    <div style="text-align: center; color: #ffd84d; font-size: 0.95rem; margin-top: 24px;">
+      &copy; 2025 DKM Masjid RT 04 RW 021. All rights reserved.
+    </div>
+  </footer>
+
+     <script>
+      // Navbar toggle for responsive menu
+      document.addEventListener('DOMContentLoaded', function () {
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+        const menuIconPath = menuToggle.querySelector('svg path'); // Get the path element of the SVG
+
+        // SVG path data for hamburger and close icon
+        const hamburgerPath = 'M4 6h16M4 12h16M4 18h16';
+        const closePath = 'M6 18L18 6M6 6l12 12';
+
+        if (menuToggle && navLinks && menuIconPath) {
+          menuToggle.addEventListener('click', function () {
+            const isHidden = navLinks.classList.contains('hidden');
+
+            // Toggle visibility and positioning classes
+            navLinks.classList.toggle('hidden');
+            navLinks.classList.toggle('flex');
+            navLinks.classList.toggle('absolute');
+            navLinks.classList.toggle('top-16');
+            navLinks.classList.toggle('left-0');
+            navLinks.classList.toggle('bg-gray-800');
+            navLinks.classList.toggle('p-4');
+            navLinks.classList.toggle('shadow-lg');
+            navLinks.classList.toggle('z-10');
+
+            // Change the SVG icon based on menu state
+            if (isHidden) {
+              menuIconPath.setAttribute('d', closePath); // Menu is opening, show close icon
+            } else {
+              menuIconPath.setAttribute('d', hamburgerPath); // Menu is closing, show hamburger icon
+            }
+          });
+
+          // Function to close the menu and revert icon
+          const closeMenu = () => {
+            if (!navLinks.classList.contains('hidden')) {
+              navLinks.classList.add('hidden');
+              navLinks.classList.remove(
+                'flex',
+                'absolute',
+                'top-16',
+                'left-0',
+                'bg-gray-800',
+                'p-4',
+                'shadow-lg',
+                'z-10'
+              );
+              menuIconPath.setAttribute('d', hamburgerPath); // Revert to hamburger icon
+            }
+          };
+
+          // Close the menu when a link is clicked
+          navLinks.querySelectorAll('a').forEach((link) => {
+            link.addEventListener('click', closeMenu);
+          });
+
+          // Close menu when clicking outside
+          document.addEventListener('click', (event) => {
+            const isClickInsideNav =
+              navLinks.contains(event.target) || menuToggle.contains(event.target);
+            if (!isClickInsideNav) {
+              // Only close if the click is outside
+              closeMenu();
+            }
+          });
+        }
+      });
+    </script>
     <script>
       // Efek smooth transition (fade-in) pada body
       window.addEventListener("DOMContentLoaded", function () {
@@ -180,40 +335,6 @@
       }
     });
     </script>
-    <footer id="kontak-dkm" style="background: linear-gradient(90deg, #357abd 0%, #1a2a47 100%); color: #fff; padding: 32px 0 16px 0; margin-top: 48px;">
-    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 24px; padding: 0 24px;">
-      <!-- Logo & Nama -->
-      <div style="flex: 1 1 200px; min-width: 180px;">
-        <div style="display: flex; align-items: center; gap: 12px;">
-          <img src="/assets/img/logo-masjid.png" alt="Logo Masjid" style="width: 48px; height: 48px; border-radius: 50%; background: #fff; object-fit: cover;" />
-          <div>
-            <div style="font-size: 1.2rem; font-weight: bold;">DKM Masjid RT 04 RW 021</div>
-            <div style="font-size: 0.95rem;">Desa Bojong Gede</div>
-          </div>
-        </div>
-      </div>
-      <!-- Alamat & Kontak -->
-      <div style="flex: 2 1 320px; min-width: 220px;">
-        <div style="margin-bottom: 8px;">
-          <b>Alamat:</b><br>
-          Jl. Masjid RT 04 RW 021, Desa Bojong Gede, Kec. Bojong Gede, Kab. Bogor, Jawa Barat 16922
-        </div>
-        <div>
-          <b>Kontak DKM:</b><br>
-          <a href="tel:+6281234567890" style="color: #ffd84d; text-decoration: underline;">+62 812-3456-7890</a>
-        </div>
-      </div>
-      <!-- Map -->
-      <div style="flex: 1 1 160px; min-width: 120px; text-align: center;">
-        <a href="https://maps.app.goo.gl/1dTUben6EVyM1gRZ6" target="_blank" rel="noopener" title="Lihat lokasi di Google Maps">
-          <img src="/assets/img/map-preview.png" alt="Map Lokasi Masjid" style="width: 120px; height: 80px; border-radius: 8px; border: 2px solid #ffd84d; object-fit: cover; box-shadow: 0 2px 8px rgba(0,0,0,0.12);" />
-          <div style="margin-top: 4px; color: #ffd84d; font-size: 0.95rem;">Lihat di Google Maps</div>
-        </a>
-      </div>
-    </div>
-    <div style="text-align: center; color: #ffd84d; font-size: 0.95rem; margin-top: 24px;">
-      &copy; 2025 DKM Masjid RT 04 RW 021. All rights reserved.
-    </div>
-  </footer>
+    
   </body>
 </html>

@@ -6,8 +6,7 @@
     <title>Jadwal Kegiatan Keagamaan RT 04 RW 021</title>
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body style="opacity: 0; transition: opacity 0.7s">
@@ -23,159 +22,377 @@
         transform: translate(-50%, -50%);
         z-index: 2000;
         pointer-events: none;
-      "
-    ></div>
+      "></div>
     <header>
-      <nav>
-        <div class="navbar-content">
-          <a href="index.html" id="logo-home" class="logo">🌐 Logo</a>
-          <ul>
+      <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center max-w-6xl">
+          <a href="index.html" id="logo-home" class="**text-white** text-2xl font-bold">🌐 Logo</a>
+
+          <button id="menu-toggle" class="lg:hidden focus:outline-none" aria-label="Toggle menu">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="#fff"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+
+          <ul
+            id="nav-links"
+            class="hidden lg:flex lg:items-center space-x-4 flex-col lg:flex-row mt-4 lg:mt-0 w-full lg:w-auto">
             <li>
-              <a href="/assets/pages/jadwal.html" id="nav-jadwal">Jadwal</a>
+              <a
+                href="/assets/pages/jadwal.html"
+                id="nav-jadwal"
+                class="block py-2 px-3 ml-4 **text-white** hover:bg-gray-700 rounded transition duration-200 **text-center**"
+                >Jadwal</a
+              >
             </li>
             <li>
-              <a href="/assets/pages/lokasi.html" id="nav-lokasi">Lokasi</a>
+              <a
+                href="/assets/pages/lokasi.html"
+                id="nav-lokasi"
+                class="block py-2 px-3 **text-white** hover:bg-gray-700 rounded transition duration-200 **text-center**"
+                >Lokasi</a
+              >
             </li>
             <li>
-              <a href="/assets/pages/hadist.html" id="nav-hadist">Hadist</a>
+              <a
+                href="/assets/pages/hadist.html"
+                id="nav-hadist"
+                class="block py-2 px-3 **text-white** hover:bg-gray-700 rounded transition duration-200 **text-center**"
+                >Hadist</a
+              >
             </li>
             <li>
-              <a href="/assets/pages/tentangKami.html">Tentang Kami</a>
+              <a
+                href="/assets/pages/tentangKami.html"
+                class="block py-2 px-3 **text-white** hover:bg-gray-700 rounded transition duration-200 **text-center**"
+                >Tentang Kami</a
+              >
             </li>
             <li>
-              <a href="#kontak-dkm" id="nav-kontak">Kontak</a>
+              <a
+                href="#kontak-dkm"
+                id="nav-kontak"
+                class="block py-2 px-3 **text-white** hover:bg-gray-700 rounded transition duration-200 **text-center**"
+                >Kontak</a
+              >
+            </li>
+            <li>
+              <button
+                id="toggle-theme"
+                class="theme-toggle-btn block py-2 px-3 **text-white** hover:bg-gray-700 rounded transition duration-200 w-full md:w-auto flex justify-center items-center"
+                aria-label="Ganti Mode"
+                title="Ganti Mode">
+                🌙
+              </button>
             </li>
           </ul>
-          <button
-            id="toggle-theme"
-            class="theme-toggle-btn"
-            aria-label="Ganti Mode"
-            title="Ganti Mode"
-          >
-            🌙
-          </button>
         </div>
       </nav>
     </header>
     <main>
-      <section
-        class="welcome-section flex flex-col md:flex-row items-center justify-center py-8 rounded-lg shadow-md w-full max-w-none mt-8 mb-8"
-        style="box-sizing: border-box; background: #dde6ed"
-      >
-        <div class="md:w-1/2 w-full text-left px-6">
-          <h1 class="text-4xl font-bold my-4 text-gray-800">Assalamu’alaikum Warahmatullahi Wabarakatuh</h1>
-          <h2 class="text-2xl font-semibold my-2 text-gray-700">
-            Selamat Datang di Sistem Informasi Jadwalan Kegiatan Keagamaan Islam RT 04 RW 021 Desa Bojong Gede
-          </h2>
-          <p class="my-2 text-gray-600">
-            Temukan informasi jadwal solat, jadwal kegiatan, lokasi masjid & musholla, serta hadist pilihan
-          </p>
-        </div>
-        <div class="md:w-1/2 w-full flex justify-center items-center px-6">
-          <div
-            id="activity-slider"
-            class="w-48 h-48 flex items-center justify-center"
-          >
-            <img
-              id="activity-img"
-              src="https://images.unsplash.com/photo-1564769625905-50e93615e769?w=400"
-              alt="Kegiatan"
-              class="w-48 h-48 object-cover rounded-lg shadow transition-all duration-500"
-            />
+      <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <section
+          class="welcome-section flex flex-col md:flex-row items-center justify-center py-8 rounded-lg shadow-md w-full max-w-none mt-8 mb-8"
+          style="box-sizing: border-box; background: #dde6ed">
+          <div class="md:w-1/2 w-full text-center md:text-left px-4 sm:px-6 py-4">
+            <h1
+              class="text-3xl sm:text-4xl lg:text-5xl font-bold my-2 sm:my-4 text-gray-800 leading-tight">
+              Assalamu’alaikum Warahmatullahi Wabarakatuh
+            </h1>
+            <h2
+              class="text-xl sm:text-2xl lg:text-3xl font-semibold my-2 text-gray-700 leading-snug">
+              Selamat Datang di Sistem Informasi Jadwalan Kegiatan Keagamaan Islam RT 04 RW 021 Desa
+              Bojong Gede
+            </h2>
+            <p class="my-2 text-base sm:text-lg text-gray-600">
+              Temukan informasi jadwal solat, jadwal kegiatan, lokasi masjid & musholla, serta
+              hadist pilihan
+            </p>
           </div>
-        </div>
-      </section>
-      <section>
-        <div class="slider-container">
-          <button class="slider-arrow prev" id="prevBtn">❮</button>
-          <div class="slider" id="slider">
-            <img src="assets/img/masjid-ALbatul.jpg" alt="Masjid Siang" />
-            <img src="assets/img/masjid-ALkautsar.jpg" alt="Masjid Malam" />
-            <img
-              src="assets/img/mushollah-baitulMuslim.jpeg"
-              alt="Masjid Subuh"
-            />
+          <div class="md:w-1/2 w-full flex justify-center items-center px-4 sm:px-6 py-4">
+            <div
+              id="activity-slider"
+              class="w-64 h-64 sm:w-80 sm:h-80 flex items-center justify-center">
+              <img
+                id="activity-img"
+                src="https://images.unsplash.com/photo-1564769625905-50e93615e769?w=400"
+                alt="Kegiatan"
+                class="w-full h-full object-cover rounded-lg shadow transition-all duration-500" />
+            </div>
           </div>
-          <button class="slider-arrow next" id="nextBtn">❯</button>
-          <div class="slider-indicators">
-            <div class="indicator active" data-slide="0"></div>
-            <div class="indicator" data-slide="1"></div>
-            <div class="indicator" data-slide="2"></div>
+        </section>
+        <section>
+          <div class="slider-container">
+            <button class="slider-arrow prev" id="prevBtn">❮</button>
+            <div class="slider" id="slider">
+              <img src="assets/img/masjid-ALbatul.jpg" alt="Masjid Siang" />
+              <img src="assets/img/masjid-ALkautsar.jpg" alt="Masjid Malam" />
+              <img src="assets/img/mushollah-baitulMuslim.jpeg" alt="Masjid Subuh" />
+            </div>
+            <button class="slider-arrow next" id="nextBtn">❯</button>
+            <div class="slider-indicators">
+              <div class="indicator active" data-slide="0"></div>
+              <div class="indicator" data-slide="1"></div>
+              <div class="indicator" data-slide="2"></div>
+            </div>
           </div>
-        </div>
-      </section>
-      <section id="jadwal" class="my-6 mb-4 bg-[#ffd84d]">
-        <h3 class="text-2xl font-semibold my-4 text-white">JADWAL SOLAT</h3>
-        <div class="w-full flex justify-center mb-4 bg-[#1a2a47]">
-          <div
-            class="flex flex-col md:flex-row items-center gap-2 rounded-lg p-4 shadow w-full md:w-auto justify-center"
-            style="background: linear-gradient(90deg, #1a2a47 30%, #ffd84d 70%)"
-          >
-            <select
-              id="city"
-              class="p-2 border-0 rounded-lg text-gray-700 shadow-sm focus:ring-2 focus:ring-[#ffd84d] focus:outline-none font-semibold min-w-[120px] mx-1"
-            >
-              <option value="Jakarta">Jakarta</option>
-              <option value="Bogor">Bogor</option>
-              <option value="Bandung">Bandung</option>
-              <option value="Surabaya">Surabaya</option>
-              <option value="Medan">Medan</option>
-              <option value="Semarang">Semarang</option>
-              <option value="Makassar">Makassar</option>
-              <option value="Yogyakarta">Yogyakarta</option>
-              <option value="Palembang">Palembang</option>
-              <option value="Denpasar">Denpasar</option>
-              <option value="Balikpapan">Balikpapan</option>
-            </select>
-            <select
-              id="month-select"
-              class="p-2 border-0 rounded-lg text-gray-700 shadow-sm focus:ring-2 focus:ring-[#ffd84d] focus:outline-none font-semibold min-w-[110px] mx-1"
-            ></select>
-            <select
-              id="year-select"
-              class="p-2 border-0 rounded-lg text-gray-700 shadow-sm focus:ring-2 focus:ring-[#ffd84d] focus:outline-none font-semibold min-w-[90px] mx-1"
-            ></select>
-            <span
-              class="text-gray-800 text-base font-semibold mt-2 md:mt-0 md:ml-4"
-              id="datetime-display"
-              >Memuat tanggal...</span
-            >
+        </section>
+        <section id="jadwal" class="my-6 mb-4 bg-[#ffd84d] p-4 rounded-lg shadow-md" style="box-sizing: border-box; background: #dde6ed">
+          <h3 class="text-2xl sm:text-3xl font-semibold my-4 text-white text-center">
+            JADWAL SOLAT
+          </h3>
+          <div class="w-full flex justify-center mb-4 bg-[#dde6ed] rounded-lg p-2 sm:p-4">
+            <div
+              class="flex flex-col md:flex-row items-center gap-2 rounded-lg p-2 sm:p-4 shadow w-full md:w-auto justify-center"
+              style="background: linear-gradient(-10deg, #1a2a47 30%, #ffd84d 70%)">
+              <select
+                id="city"
+                class="p-2 border-0 rounded-lg text-gray-700 shadow-sm focus:ring-2 focus:ring-[#ffd84d] focus:outline-none font-semibold min-w-[120px] w-full md:w-auto mx-1">
+                <option value="Jakarta">Jakarta</option>
+                <option value="Bogor">Bogor</option>
+                <option value="Bandung">Bandung</option>
+                <option value="Surabaya">Surabaya</option>
+                <option value="Medan">Medan</option>
+                <option value="Semarang">Semarang</option>
+                <option value="Makassar">Makassar</option>
+                <option value="Yogyakarta">Yogyakarta</option>
+                <option value="Palembang">Palembang</option>
+                <option value="Denpasar">Denpasar</option>
+                <option value="Balikpapan">Balikpapan</option>
+              </select>
+              <select
+                id="month-select"
+                class="p-2 border-0 rounded-lg text-gray-700 shadow-sm focus:ring-2 focus:ring-[#ffd84d] focus:outline-none font-semibold min-w-[110px] w-full md:w-auto mx-1"></select>
+              <select
+                id="year-select"
+                class="p-2 border-0 rounded-lg text-gray-700 shadow-sm focus:ring-2 focus:ring-[#ffd84d] focus:outline-none font-semibold min-w-[90px] w-full md:w-auto mx-1"></select>
+              <span
+                class="text-gray-100 text-sm sm:text-base font-semibold mt-2 md:mt-0 md:ml-4 text-center w-full md:w-auto"
+                id="datetime-display"
+                >Memuat tanggal...</span
+              >
+            </div>
           </div>
-        </div>
-        <table class="schedule-table">
-          <thead>
-            <tr>
-              <th>Tanggal</th>
-              <th>Subuh</th>
-              <th>Dzuhur</th>
-              <th>Ashar</th>
-              <th>Maghrib</th>
-              <th>Isya</th>
-            </tr>
-          </thead>
-          <tbody id="schedule-body">
-            <!-- Data akan diisi oleh JavaScript -->
-          </tbody>
-        </table>
-      </section>
+          <div class="overflow-x-auto">
+            <table class="schedule-table min-w-full divide-y divide-gray-200">
+              <thead class="bg-gray-50">
+                <tr>
+                  <th
+                    scope="col"
+                    class="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                    Tanggal
+                  </th>
+                  <th
+                    scope="col"
+                    class="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                    Subuh
+                  </th>
+                  <th
+                    scope="col"
+                    class="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                    Dzuhur
+                  </th>
+                  <th
+                    scope="col"
+                    class="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                    Ashar
+                  </th>
+                  <th
+                    scope="col"
+                    class="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                    Maghrib
+                  </th>
+                  <th
+                    scope="col"
+                    class="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                    Isya
+                  </th>
+                </tr>
+              </thead>
+              <tbody id="schedule-body" class="bg-white divide-y divide-gray-200"></tbody>
+            </table>
+          </div>
+        </section>
+      </div>
     </main>
+    <!-- Footer Start -->
+    <footer
+      id="kontak-dkm"
+      style="
+        background: linear-gradient(90deg, #357abd 0%, #1a2a47 100%);
+        color: #fff;
+        padding: 32px 0 16px 0;
+        margin-top: 48px;
+      ">
+      <div
+        style="
+          max-width: 1200px;
+          margin: 0 auto;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: flex-start;
+          justify-content: space-between;
+          gap: 24px;
+          padding: 0 24px;
+        ">
+        <!-- Logo & Nama -->
+        <div style="flex: 1 1 200px; min-width: 180px">
+          <div style="display: flex; align-items: center; gap: 12px">
+            <img
+              src="/assets/img/logo-masjid.png"
+              alt="Logo Masjid"
+              style="
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                background: #fff;
+                object-fit: cover;
+              " />
+            <div>
+              <div style="font-size: 1.2rem; font-weight: bold">DKM Masjid RT 04 RW 021</div>
+              <div style="font-size: 0.95rem">Desa Bojong Gede</div>
+            </div>
+          </div>
+        </div>
+        <!-- Alamat & Kontak -->
+        <div style="flex: 2 1 320px; min-width: 220px">
+          <div style="margin-bottom: 8px">
+            <b>Alamat:</b><br />
+            Jl. Masjid RT 04 RW 021, Desa Bojong Gede, Kec. Bojong Gede, Kab. Bogor, Jawa Barat
+            16922
+          </div>
+          <div>
+            <b>Kontak DKM:</b><br />
+            <a href="tel:+6281234567890" style="color: #ffd84d; text-decoration: underline"
+              >+62 812-3456-7890</a
+            >
+          </div>
+        </div>
+        <!-- Map -->
+        <div style="flex: 1 1 160px; min-width: 120px; text-align: center">
+          <a
+            href="https://maps.app.goo.gl/1nsqZLNS2VxvRgS4A"
+            target="_blank"
+            rel="noopener"
+            title="Lihat lokasi di Google Maps">
+            <img
+              src="/assets/img/maps.png"
+              alt="Map Lokasi Masjid"
+              style="
+                width: 300px;
+                height: 200px;
+                border-radius: 8px;
+                border: 2px solid #ffd84d;
+                object-fit: cover;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+              " />
+            <div style="margin-top: 4px; color: #ffd84d; font-size: 0.95rem">
+              Lihat di Google Maps
+            </div>
+          </a>
+        </div>
+      </div>
+      <div style="text-align: center; color: #ffd84d; font-size: 0.95rem; margin-top: 24px">
+        &copy; 2025 DKM Masjid RT 04 RW 021. All rights reserved.
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <script>
+      // Navbar toggle for responsive menu
+      document.addEventListener('DOMContentLoaded', function () {
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+        const menuIconPath = menuToggle.querySelector('svg path'); // Get the path element of the SVG
+
+        // SVG path data for hamburger and close icon
+        const hamburgerPath = 'M4 6h16M4 12h16M4 18h16';
+        const closePath = 'M6 18L18 6M6 6l12 12';
+
+        if (menuToggle && navLinks && menuIconPath) {
+          menuToggle.addEventListener('click', function () {
+            const isHidden = navLinks.classList.contains('hidden');
+
+            // Toggle visibility and positioning classes
+            navLinks.classList.toggle('hidden');
+            navLinks.classList.toggle('flex');
+            navLinks.classList.toggle('absolute');
+            navLinks.classList.toggle('top-16');
+            navLinks.classList.toggle('left-0');
+            navLinks.classList.toggle('bg-gray-800');
+            navLinks.classList.toggle('p-4');
+            navLinks.classList.toggle('shadow-lg');
+            navLinks.classList.toggle('z-10');
+
+            // Change the SVG icon based on menu state
+            if (isHidden) {
+              menuIconPath.setAttribute('d', closePath); // Menu is opening, show close icon
+            } else {
+              menuIconPath.setAttribute('d', hamburgerPath); // Menu is closing, show hamburger icon
+            }
+          });
+
+          // Function to close the menu and revert icon
+          const closeMenu = () => {
+            if (!navLinks.classList.contains('hidden')) {
+              navLinks.classList.add('hidden');
+              navLinks.classList.remove(
+                'flex',
+                'absolute',
+                'top-16',
+                'left-0',
+                'bg-gray-800',
+                'p-4',
+                'shadow-lg',
+                'z-10'
+              );
+              menuIconPath.setAttribute('d', hamburgerPath); // Revert to hamburger icon
+            }
+          };
+
+          // Close the menu when a link is clicked
+          navLinks.querySelectorAll('a').forEach((link) => {
+            link.addEventListener('click', closeMenu);
+          });
+
+          // Close menu when clicking outside
+          document.addEventListener('click', (event) => {
+            const isClickInsideNav =
+              navLinks.contains(event.target) || menuToggle.contains(event.target);
+            if (!isClickInsideNav) {
+              // Only close if the click is outside
+              closeMenu();
+            }
+          });
+        }
+      });
+    </script>
 
     <script>
       // Efek smooth transition (fade-in) pada body saat load
-      document.addEventListener("DOMContentLoaded", function () {
+      document.addEventListener('DOMContentLoaded', function () {
         setTimeout(function () {
           document.body.style.opacity = 1;
         }, 80);
       });
 
       // Logo klik: smooth transition ke landing page jika dari halaman lain
-      const logo = document.getElementById("logo-home");
+      const logo = document.getElementById('logo-home');
       if (logo) {
-        logo.addEventListener("click", function (e) {
+        logo.addEventListener('click', function (e) {
           e.preventDefault();
           document.body.style.opacity = 0;
           setTimeout(function () {
-            window.location.href = "index.html";
+            window.location.href = 'index.html';
           }, 400);
         });
       }
@@ -183,34 +400,30 @@
       // Main Slider Functionality
       class MainSlider {
         constructor() {
-          this.slider = document.getElementById("slider");
-          this.prevBtn = document.getElementById("prevBtn");
-          this.nextBtn = document.getElementById("nextBtn");
-          this.indicators = document.querySelectorAll(".indicator");
+          this.slider = document.getElementById('slider');
+          this.prevBtn = document.getElementById('prevBtn');
+          this.nextBtn = document.getElementById('nextBtn');
+          this.indicators = document.querySelectorAll('.indicator');
           this.currentSlide = 0;
           this.totalSlides = 3;
           this.autoSlideInterval = null;
           this.init();
         }
         init() {
-          this.prevBtn.addEventListener("click", () => this.prevSlide());
-          this.nextBtn.addEventListener("click", () => this.nextSlide());
+          this.prevBtn.addEventListener('click', () => this.prevSlide());
+          this.nextBtn.addEventListener('click', () => this.nextSlide());
           this.indicators.forEach((indicator, index) => {
-            indicator.addEventListener("click", () => this.goToSlide(index));
+            indicator.addEventListener('click', () => this.goToSlide(index));
           });
           this.startAutoSlide();
-          this.slider.parentElement.addEventListener("mouseenter", () =>
-            this.stopAutoSlide()
-          );
-          this.slider.parentElement.addEventListener("mouseleave", () =>
-            this.startAutoSlide()
-          );
+          this.slider.parentElement.addEventListener('mouseenter', () => this.stopAutoSlide());
+          this.slider.parentElement.addEventListener('mouseleave', () => this.startAutoSlide());
         }
         updateSlider() {
           const translateX = -this.currentSlide * 100;
           this.slider.style.transform = `translateX(${translateX}%)`;
           this.indicators.forEach((indicator, index) => {
-            indicator.classList.toggle("active", index === this.currentSlide);
+            indicator.classList.toggle('active', index === this.currentSlide);
           });
         }
         nextSlide() {
@@ -218,8 +431,7 @@
           this.updateSlider();
         }
         prevSlide() {
-          this.currentSlide =
-            (this.currentSlide - 1 + this.totalSlides) % this.totalSlides;
+          this.currentSlide = (this.currentSlide - 1 + this.totalSlides) % this.totalSlides;
           this.updateSlider();
         }
         goToSlide(slideIndex) {
@@ -242,12 +454,12 @@
       // Activity Slider Functionality
       class ActivitySlider {
         constructor() {
-          this.activityImg = document.getElementById("activity-img");
+          this.activityImg = document.getElementById('activity-img');
           this.images = [
-            "assets/img/ngaji11.jpg",
-            "assets/img/ngaji2.jpg",
-            "assets/img/ngaji3.jpg",
-            "assets/img/qasidah.png",
+            'assets/img/ngaji11.jpg',
+            'assets/img/ngaji2.jpg',
+            'assets/img/ngaji3.jpg',
+            'assets/img/qasidah.png',
           ];
           this.currentIndex = 0;
           this.init();
@@ -256,12 +468,12 @@
           this.startAutoRotate();
         }
         changeImage() {
-          this.activityImg.style.opacity = "0";
+          this.activityImg.style.opacity = '0';
           setTimeout(() => {
             this.currentIndex = (this.currentIndex + 1) % this.images.length;
             this.activityImg.src = this.images[this.currentIndex];
             this.activityImg.alt = `Kegiatan ${this.currentIndex + 1}`;
-            this.activityImg.style.opacity = "1";
+            this.activityImg.style.opacity = '1';
           }, 350);
         }
         startAutoRotate() {
@@ -273,11 +485,11 @@
       // Prayer Schedule API Handler with Al-Adhan API
       class PrayerScheduleAPI {
         constructor() {
-          this.citySelect = document.getElementById("city");
-          this.monthSelect = document.getElementById("month-select");
-          this.yearSelect = document.getElementById("year-select");
-          this.scheduleBody = document.getElementById("schedule-body");
-          this.currentCity = "Jakarta";
+          this.citySelect = document.getElementById('city');
+          this.monthSelect = document.getElementById('month-select');
+          this.yearSelect = document.getElementById('year-select');
+          this.scheduleBody = document.getElementById('schedule-body');
+          this.currentCity = 'Jakarta';
           this.currentMonth = new Date().getMonth() + 1; // 1-based
           this.currentYear = new Date().getFullYear();
           this.init();
@@ -286,35 +498,19 @@
           // Isi dropdown bulan dan tahun
           this.populateMonthYear();
           // Load initial schedule
-          this.fetchPrayerTimesForMonth(
-            this.currentCity,
-            this.currentMonth,
-            this.currentYear
-          );
+          this.fetchPrayerTimesForMonth(this.currentCity, this.currentMonth, this.currentYear);
           // Event listeners
-          this.citySelect.addEventListener("change", (e) => {
+          this.citySelect.addEventListener('change', (e) => {
             this.currentCity = e.target.value;
-            this.fetchPrayerTimesForMonth(
-              this.currentCity,
-              this.currentMonth,
-              this.currentYear
-            );
+            this.fetchPrayerTimesForMonth(this.currentCity, this.currentMonth, this.currentYear);
           });
-          this.monthSelect.addEventListener("change", (e) => {
+          this.monthSelect.addEventListener('change', (e) => {
             this.currentMonth = parseInt(e.target.value);
-            this.fetchPrayerTimesForMonth(
-              this.currentCity,
-              this.currentMonth,
-              this.currentYear
-            );
+            this.fetchPrayerTimesForMonth(this.currentCity, this.currentMonth, this.currentYear);
           });
-          this.yearSelect.addEventListener("change", (e) => {
+          this.yearSelect.addEventListener('change', (e) => {
             this.currentYear = parseInt(e.target.value);
-            this.fetchPrayerTimesForMonth(
-              this.currentCity,
-              this.currentMonth,
-              this.currentYear
-            );
+            this.fetchPrayerTimesForMonth(this.currentCity, this.currentMonth, this.currentYear);
           });
           // Update date and time
           this.updateDateTime();
@@ -322,32 +518,32 @@
         }
         populateMonthYear() {
           const monthNames = [
-            "Januari",
-            "Februari",
-            "Maret",
-            "April",
-            "Mei",
-            "Juni",
-            "Juli",
-            "Agustus",
-            "September",
-            "Oktober",
-            "November",
-            "Desember",
+            'Januari',
+            'Februari',
+            'Maret',
+            'April',
+            'Mei',
+            'Juni',
+            'Juli',
+            'Agustus',
+            'September',
+            'Oktober',
+            'November',
+            'Desember',
           ];
           this.monthSelect.innerHTML = monthNames
             .map(
               (name, idx) =>
                 `<option value="${idx + 1}"${
-                  idx + 1 === this.currentMonth ? " selected" : ""
+                  idx + 1 === this.currentMonth ? ' selected' : ''
                 }>${name}</option>`
             )
-            .join("");
+            .join('');
           const thisYear = new Date().getFullYear();
-          let yearOptions = "";
+          let yearOptions = '';
           for (let y = thisYear - 2; y <= thisYear + 2; y++) {
             yearOptions += `<option value="${y}"${
-              y === this.currentYear ? " selected" : ""
+              y === this.currentYear ? ' selected' : ''
             }>${y}</option>`;
           }
           this.yearSelect.innerHTML = yearOptions;
@@ -356,17 +552,17 @@
           try {
             this.setLoadingState();
             const cityMap = {
-              Jakarta: "Jakarta",
-              Bogor: "Bogor",
-              Bandung: "Bandung",
-              Surabaya: "Surabaya",
-              Medan: "Medan",
-              Semarang: "Semarang",
-              Makassar: "Makassar",
-              Yogyakarta: "Yogyakarta",
-              Palembang: "Palembang",
-              Denpasar: "Denpasar",
-              Balikpapan: "Balikpapan",
+              Jakarta: 'Jakarta',
+              Bogor: 'Bogor',
+              Bandung: 'Bandung',
+              Surabaya: 'Surabaya',
+              Medan: 'Medan',
+              Semarang: 'Semarang',
+              Makassar: 'Makassar',
+              Yogyakarta: 'Yogyakarta',
+              Palembang: 'Palembang',
+              Denpasar: 'Denpasar',
+              Balikpapan: 'Balikpapan',
             };
             const mappedCity = cityMap[city] || city;
             // API calendarByCity: 1x fetch untuk 1 bulan
@@ -375,13 +571,11 @@
                 mappedCity
               )}&country=Indonesia&method=2&month=${month}&year=${year}`
             );
-            if (!response.ok)
-              throw new Error("Gagal mengambil data jadwal solat");
+            if (!response.ok) throw new Error('Gagal mengambil data jadwal solat');
             const data = await response.json();
-            if (data.code !== 200 || !data.data)
-              throw new Error("Data tidak valid");
+            if (data.code !== 200 || !data.data) throw new Error('Data tidak valid');
             const scheduleData = data.data.map((item) => {
-              const tgl = item.date.gregorian.date.split("-");
+              const tgl = item.date.gregorian.date.split('-');
               // tgl: [DD, MM, YYYY]
               return {
                 date: `${tgl[0]}-${tgl[1]}-${tgl[2]}`,
@@ -390,32 +584,24 @@
                 ashar: this.formatTime(item.timings.Asr),
                 maghrib: this.formatTime(item.timings.Maghrib),
                 isya: this.formatTime(item.timings.Isha),
-                isToday: this.isToday(
-                  parseInt(tgl[0]),
-                  parseInt(tgl[1]),
-                  parseInt(tgl[2])
-                ),
+                isToday: this.isToday(parseInt(tgl[0]), parseInt(tgl[1]), parseInt(tgl[2])),
               };
             });
             this.updateScheduleDisplay(scheduleData);
           } catch (error) {
-            console.error("Error fetching prayer times:", error.message);
+            console.error('Error fetching prayer times:', error.message);
             this.setErrorState();
-            this.updateScheduleDisplay(
-              this.getFallbackScheduleForMonth(city, month, year)
-            );
+            this.updateScheduleDisplay(this.getFallbackScheduleForMonth(city, month, year));
           }
         }
         isToday(day, month, year) {
           const now = new Date();
           return (
-            now.getDate() === day &&
-            now.getMonth() + 1 === month &&
-            now.getFullYear() === year
+            now.getDate() === day && now.getMonth() + 1 === month && now.getFullYear() === year
           );
         }
         formatTime(time) {
-          return time ? time.split(" ")[0].substring(0, 5) : "N/A";
+          return time ? time.split(' ')[0].substring(0, 5) : 'N/A';
         }
         setLoadingState() {
           this.scheduleBody.innerHTML = `
@@ -433,27 +619,27 @@
           `;
         }
         updateScheduleDisplay(scheduleData) {
-          this.scheduleBody.innerHTML = "";
+          this.scheduleBody.innerHTML = '';
           scheduleData.forEach((day) => {
-            const row = document.createElement("tr");
+            const row = document.createElement('tr');
             row.innerHTML = `
               <td class="text-gray-700 font-medium${
-                day.isToday ? " bg-yellow-100 rounded font-bold" : ""
+                day.isToday ? ' bg-yellow-100 rounded font-bold' : ''
               }">${day.date}</td>
               <td class="text-gray-700 font-medium${
-                day.isToday ? " bg-yellow-100 rounded font-bold" : ""
+                day.isToday ? ' bg-yellow-100 rounded font-bold' : ''
               }">${day.subuh}</td>
               <td class="text-gray-700 font-medium${
-                day.isToday ? " bg-yellow-100 rounded font-bold" : ""
+                day.isToday ? ' bg-yellow-100 rounded font-bold' : ''
               }">${day.dzuhur}</td>
               <td class="text-gray-700 font-medium${
-                day.isToday ? " bg-yellow-100 rounded font-bold" : ""
+                day.isToday ? ' bg-yellow-100 rounded font-bold' : ''
               }">${day.ashar}</td>
               <td class="text-gray-700 font-medium${
-                day.isToday ? " bg-yellow-100 rounded font-bold" : ""
+                day.isToday ? ' bg-yellow-100 rounded font-bold' : ''
               }">${day.maghrib}</td>
               <td class="text-gray-700 font-medium${
-                day.isToday ? " bg-yellow-100 rounded font-bold" : ""
+                day.isToday ? ' bg-yellow-100 rounded font-bold' : ''
               }">${day.isya}</td>
             `;
             this.scheduleBody.appendChild(row);
@@ -462,89 +648,89 @@
         getFallbackScheduleForMonth(city, month, year) {
           const baseTimes = {
             Jakarta: {
-              subuh: "04:41",
-              dzuhur: "11:55",
-              ashar: "15:17",
-              maghrib: "17:48",
-              isya: "19:01",
+              subuh: '04:41',
+              dzuhur: '11:55',
+              ashar: '15:17',
+              maghrib: '17:48',
+              isya: '19:01',
             },
             Bogor: {
-              subuh: "04:39",
-              dzuhur: "11:54",
-              ashar: "15:16",
-              maghrib: "17:47",
-              isya: "19:00",
+              subuh: '04:39',
+              dzuhur: '11:54',
+              ashar: '15:16',
+              maghrib: '17:47',
+              isya: '19:00',
             },
             Bandung: {
-              subuh: "04:45",
-              dzuhur: "12:00",
-              ashar: "15:20",
-              maghrib: "17:50",
-              isya: "19:05",
+              subuh: '04:45',
+              dzuhur: '12:00',
+              ashar: '15:20',
+              maghrib: '17:50',
+              isya: '19:05',
             },
             Surabaya: {
-              subuh: "04:30",
-              dzuhur: "11:50",
-              ashar: "15:15",
-              maghrib: "17:45",
-              isya: "19:00",
+              subuh: '04:30',
+              dzuhur: '11:50',
+              ashar: '15:15',
+              maghrib: '17:45',
+              isya: '19:00',
             },
             Medan: {
-              subuh: "05:00",
-              dzuhur: "12:15",
-              ashar: "15:35",
-              maghrib: "18:05",
-              isya: "19:20",
+              subuh: '05:00',
+              dzuhur: '12:15',
+              ashar: '15:35',
+              maghrib: '18:05',
+              isya: '19:20',
             },
             Semarang: {
-              subuh: "04:40",
-              dzuhur: "11:55",
-              ashar: "15:18",
-              maghrib: "17:47",
-              isya: "19:02",
+              subuh: '04:40',
+              dzuhur: '11:55',
+              ashar: '15:18',
+              maghrib: '17:47',
+              isya: '19:02',
             },
             Makassar: {
-              subuh: "04:50",
-              dzuhur: "12:05",
-              ashar: "15:25",
-              maghrib: "17:55",
-              isya: "19:10",
+              subuh: '04:50',
+              dzuhur: '12:05',
+              ashar: '15:25',
+              maghrib: '17:55',
+              isya: '19:10',
             },
             Yogyakarta: {
-              subuh: "04:42",
-              dzuhur: "11:57",
-              ashar: "15:19",
-              maghrib: "17:49",
-              isya: "19:03",
+              subuh: '04:42',
+              dzuhur: '11:57',
+              ashar: '15:19',
+              maghrib: '17:49',
+              isya: '19:03',
             },
             Palembang: {
-              subuh: "04:48",
-              dzuhur: "12:02",
-              ashar: "15:22",
-              maghrib: "17:52",
-              isya: "19:07",
+              subuh: '04:48',
+              dzuhur: '12:02',
+              ashar: '15:22',
+              maghrib: '17:52',
+              isya: '19:07',
             },
             Denpasar: {
-              subuh: "04:55",
-              dzuhur: "12:10",
-              ashar: "15:30",
-              maghrib: "18:00",
-              isya: "19:15",
+              subuh: '04:55',
+              dzuhur: '12:10',
+              ashar: '15:30',
+              maghrib: '18:00',
+              isya: '19:15',
             },
             Balikpapan: {
-              subuh: "04:52",
-              dzuhur: "12:07",
-              ashar: "15:27",
-              maghrib: "17:57",
-              isya: "19:12",
+              subuh: '04:52',
+              dzuhur: '12:07',
+              ashar: '15:27',
+              maghrib: '17:57',
+              isya: '19:12',
             },
           };
           const scheduleData = [];
           const daysInMonth = new Date(year, month + 1, 0).getDate();
-          const times = baseTimes[city] || baseTimes["Jakarta"];
+          const times = baseTimes[city] || baseTimes['Jakarta'];
           for (let d = 1; d <= daysInMonth; d++) {
-            const day = String(d).padStart(2, "0");
-            const m = String(month + 1).padStart(2, "0");
+            const day = String(d).padStart(2, '0');
+            const m = String(month + 1).padStart(2, '0');
             scheduleData.push({
               date: `${day}-${m}-${year}`,
               subuh: times.subuh,
@@ -560,20 +746,20 @@
         updateDateTime() {
           const now = new Date();
           const options = {
-            weekday: "long",
-            year: "numeric",
-            month: "long",
-            day: "numeric",
-            timeZone: "Asia/Jakarta",
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            timeZone: 'Asia/Jakarta',
           };
           const timeOptions = {
-            hour: "2-digit",
-            minute: "2-digit",
-            timeZone: "Asia/Jakarta",
+            hour: '2-digit',
+            minute: '2-digit',
+            timeZone: 'Asia/Jakarta',
           };
-          const dateStr = now.toLocaleDateString("id-ID", options);
-          const timeStr = now.toLocaleTimeString("id-ID", timeOptions);
-          const dateTimeElement = document.getElementById("datetime-display");
+          const dateStr = now.toLocaleDateString('id-ID', options);
+          const timeStr = now.toLocaleTimeString('id-ID', timeOptions);
+          const dateTimeElement = document.getElementById('datetime-display');
           if (dateTimeElement) {
             dateTimeElement.textContent = `${dateStr} - ${timeStr} WIB`;
           }
@@ -581,19 +767,19 @@
       }
       // Spinner page transition
       function showPageSpinner() {
-        var spinner = document.getElementById("page-spinner");
+        var spinner = document.getElementById('page-spinner');
         if (spinner) {
-          spinner.style.removeProperty("display"); // pastikan display:block dari CSS
-          spinner.classList.remove("no-spin"); // jika ada class aneh
+          spinner.style.removeProperty('display'); // pastikan display:block dari CSS
+          spinner.classList.remove('no-spin'); // jika ada class aneh
         }
       }
       function hidePageSpinner() {
-        var spinner = document.getElementById("page-spinner");
-        if (spinner) spinner.style.display = "none";
+        var spinner = document.getElementById('page-spinner');
+        if (spinner) spinner.style.display = 'none';
       }
 
       // Efek smooth transition (fade-in) pada body saat load
-      document.addEventListener("DOMContentLoaded", function () {
+      document.addEventListener('DOMContentLoaded', function () {
         setTimeout(function () {
           document.body.style.opacity = 1;
           hidePageSpinner();
@@ -602,37 +788,32 @@
 
       // Spinner saat klik link/menu (navigasi antar halaman)
       document.body.addEventListener(
-      "click",
-      function (e) {
-        var a = e.target.closest("a");
-        if (
-          a &&
-          a.href &&
-          !a.target &&
-          a.hostname === location.hostname
-        ) {
-          // Jangan tampilkan spinner jika hanya scroll ke anchor di halaman yang sama
-          if (
-            a.hash && 
-            (a.pathname === location.pathname || a.pathname === "" || a.pathname === "/") &&
-            a.hash !== "" &&
-            a.href.split("#")[0] === location.href.split("#")[0]
-          ) {
-            // Anchor link, tidak perlu spinner
-            return;
+        'click',
+        function (e) {
+          var a = e.target.closest('a');
+          if (a && a.href && !a.target && a.hostname === location.hostname) {
+            // Jangan tampilkan spinner jika hanya scroll ke anchor di halaman yang sama
+            if (
+              a.hash &&
+              (a.pathname === location.pathname || a.pathname === '' || a.pathname === '/') &&
+              a.hash !== '' &&
+              a.href.split('#')[0] === location.href.split('#')[0]
+            ) {
+              // Anchor link, tidak perlu spinner
+              return;
+            }
+            // Tampilkan spinner hanya jika benar-benar pindah halaman
+            if (a.href !== location.href && !a.href.endsWith('#')) {
+              showPageSpinner();
+              document.body.style.opacity = 0.3;
+            }
           }
-          // Tampilkan spinner hanya jika benar-benar pindah halaman
-          if (a.href !== location.href && !a.href.endsWith("#")) {
-            showPageSpinner();
-            document.body.style.opacity = 0.3;
-          }
-        }
-      },
-      true
-    );
+        },
+        true
+      );
 
       // Initialize all components when DOM is loaded
-      document.addEventListener("DOMContentLoaded", () => {
+      document.addEventListener('DOMContentLoaded', () => {
         new MainSlider();
         new ActivitySlider();
         new PrayerScheduleAPI();
@@ -640,72 +821,35 @@
     </script>
     <script>
       // Theme toggle
-      const themeBtn = document.getElementById("toggle-theme");
+      const themeBtn = document.getElementById('toggle-theme');
       function setTheme(dark) {
         if (dark) {
-          document.body.classList.add("dark-mode");
-          themeBtn.textContent = "☀️";
-          localStorage.setItem("theme", "dark");
+          document.body.classList.add('dark-mode');
+          themeBtn.textContent = '☀️';
+          localStorage.setItem('theme', 'dark');
         } else {
-          document.body.classList.remove("dark-mode");
-          themeBtn.textContent = "🌙";
-          localStorage.setItem("theme", "light");
+          document.body.classList.remove('dark-mode');
+          themeBtn.textContent = '🌙';
+          localStorage.setItem('theme', 'light');
         }
       }
-      themeBtn.addEventListener("click", () => {
-        setTheme(!document.body.classList.contains("dark-mode"));
+      themeBtn.addEventListener('click', () => {
+        setTheme(!document.body.classList.contains('dark-mode'));
       });
-      document.addEventListener("DOMContentLoaded", () => {
-        setTheme(localStorage.getItem("theme") === "dark");
+      document.addEventListener('DOMContentLoaded', () => {
+        setTheme(localStorage.getItem('theme') === 'dark');
       });
-      document.addEventListener("scroll", function() {
-      var footer = document.getElementById("kontak-dkm");
-      var navKontak = document.getElementById("nav-kontak");
-      if (!footer || !navKontak) return;
-      var rect = footer.getBoundingClientRect();
-      if (rect.top < window.innerHeight && rect.bottom > 0) {
-        navKontak.classList.add("active");
-      } else {
-        navKontak.classList.remove("active");
-      }
-    });
+      document.addEventListener('scroll', function () {
+        var footer = document.getElementById('kontak-dkm');
+        var navKontak = document.getElementById('nav-kontak');
+        if (!footer || !navKontak) return;
+        var rect = footer.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          navKontak.classList.add('active');
+        } else {
+          navKontak.classList.remove('active');
+        }
+      });
     </script>
   </body>
-  <!-- Footer Start -->
-  <footer id="kontak-dkm" style="background: linear-gradient(90deg, #357abd 0%, #1a2a47 100%); color: #fff; padding: 32px 0 16px 0; margin-top: 48px;">
-    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 24px; padding: 0 24px;">
-      <!-- Logo & Nama -->
-      <div style="flex: 1 1 200px; min-width: 180px;">
-        <div style="display: flex; align-items: center; gap: 12px;">
-          <img src="/assets/img/logo-masjid.png" alt="Logo Masjid" style="width: 48px; height: 48px; border-radius: 50%; background: #fff; object-fit: cover;" />
-          <div>
-            <div style="font-size: 1.2rem; font-weight: bold;">DKM Masjid RT 04 RW 021</div>
-            <div style="font-size: 0.95rem;">Desa Bojong Gede</div>
-          </div>
-        </div>
-      </div>
-      <!-- Alamat & Kontak -->
-      <div style="flex: 2 1 320px; min-width: 220px;">
-        <div style="margin-bottom: 8px;">
-          <b>Alamat:</b><br>
-          Jl. Masjid RT 04 RW 021, Desa Bojong Gede, Kec. Bojong Gede, Kab. Bogor, Jawa Barat 16922
-        </div>
-        <div>
-          <b>Kontak DKM:</b><br>
-          <a href="tel:+6281234567890" style="color: #ffd84d; text-decoration: underline;">+62 812-3456-7890</a>
-        </div>
-      </div>
-      <!-- Map -->
-      <div style="flex: 1 1 160px; min-width: 120px; text-align: center;">
-        <a href="https://maps.app.goo.gl/1nsqZLNS2VxvRgS4A" target="_blank" rel="noopener" title="Lihat lokasi di Google Maps">
-          <img src="/assets/img/maps.png" alt="Map Lokasi Masjid" style="width: 300px; height: 200px; border-radius: 8px; border: 2px solid #ffd84d; object-fit: cover; box-shadow: 0 2px 8px rgba(0,0,0,0.12);" />
-          <div style="margin-top: 4px; color: #ffd84d; font-size: 0.95rem;">Lihat di Google Maps</div>
-        </a>
-      </div>
-    </div>
-    <div style="text-align: center; color: #ffd84d; font-size: 0.95rem; margin-top: 24px;">
-      &copy; 2025 DKM Masjid RT 04 RW 021. All rights reserved.
-    </div>
-  </footer>
-<!-- Footer End -->
 </html>

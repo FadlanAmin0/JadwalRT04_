@@ -6,12 +6,22 @@
     <title>Jadwal Kegiatan Keagamaan RT 04 RW 021</title>
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body style="opacity: 0; transition: opacity 0.7s">
-    <div id="page-overlay" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(255,255,255,0.5);z-index:1500;"></div>
+    <div
+      id="page-overlay"
+      style="
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.5);
+        z-index: 1500;
+      "></div>
     <div
       id="page-spinner"
       class="spinner"
@@ -23,59 +33,259 @@
         transform: translate(-50%, -50%);
         z-index: 2000;
         pointer-events: none;
-      "
-    ></div>
-  <!-- ...lanjutan konten... -->
-  <header>
-    <nav>
-      <div class="navbar-content">
-        <a href="../../index.html" id="logo-home" class="logo">🌐 Logo</a>
-        <ul>
+      "></div>
+    <!-- ...lanjutan konten... -->
+    <header>
+      <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center max-w-6xl">
+          <a href="/index.html" id="logo-home" class="**text-white** text-2xl font-bold">🌐 Logo</a>
+
+          <button id="menu-toggle" class="lg:hidden focus:outline-none" aria-label="Toggle menu">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="#fff"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+
+          <ul
+            id="nav-links"
+            class="hidden lg:flex lg:items-center space-x-4 flex-col lg:flex-row mt-4 lg:mt-0 w-full lg:w-auto">
             <li>
-              <a href="/assets/pages/jadwal.html" id="nav-jadwal">Jadwal</a>
+              <a
+                href="/assets/pages/jadwal.html"
+                id="nav-jadwal"
+                class="block py-2 px-3 ml-4 **text-white** hover:bg-gray-700 rounded transition duration-200 **text-center**"
+                >Jadwal</a
+              >
             </li>
             <li>
-              <a href="/assets/pages/lokasi.html" id="nav-lokasi">Lokasi</a>
+              <a
+                href="/assets/pages/lokasi.html"
+                id="nav-lokasi"
+                class="block py-2 px-3 **text-white** hover:bg-gray-700 rounded transition duration-200 **text-center**"
+                >Lokasi</a
+              >
             </li>
             <li>
-              <a href="/assets/pages/hadist.html" id="nav-hadist">Hadist</a>
+              <a
+                href="/assets/pages/hadist.html"
+                id="nav-hadist"
+                class="block py-2 px-3 **text-white** hover:bg-gray-700 rounded transition duration-200 **text-center**"
+                >Hadist</a
+              >
             </li>
             <li>
-              <a href="/assets/pages/tentangKami.html">Tentang Kami</a>
+              <a
+                href="/assets/pages/tentangKami.html"
+                class="block py-2 px-3 **text-white** hover:bg-gray-700 rounded transition duration-200 **text-center**"
+                >Tentang Kami</a
+              >
             </li>
             <li>
-              <a href="#kontak-dkm" id="nav-kontak">Kontak</a>
+              <a
+                href="#kontak-dkm"
+                id="nav-kontak"
+                class="block py-2 px-3 **text-white** hover:bg-gray-700 rounded transition duration-200 **text-center**"
+                >Kontak</a
+              >
+            </li>
+            <li>
+              <button
+                id="toggle-theme"
+                class="theme-toggle-btn block py-2 px-3 **text-white** hover:bg-gray-700 rounded transition duration-200 w-full md:w-auto flex justify-center items-center"
+                aria-label="Ganti Mode"
+                title="Ganti Mode">
+                🌙
+              </button>
             </li>
           </ul>
-          <button id="toggle-theme" class="theme-toggle-btn" aria-label="Ganti Mode" title="Ganti Mode">🌙</button>
         </div>
       </nav>
     </header>
-    <main>
+    <main class="p-4">
       <h1>KUMPULAN HADIST</h1>
       <!-- Tulisan dipindah ke dalam setiap kartu -->
-      <div id="hadist-container" class="hadist-container" onclick="showPageSpinner(); window.location.href='detailHadist.html'"></div>
+      <div
+        id="hadist-container"
+        class="hadist-container"
+        onclick="showPageSpinner(); window.location.href='detailHadist.html'"></div>
     </main>
+    <!-- Footer Start -->
+    <footer
+      id="kontak-dkm"
+      style="
+        background: linear-gradient(90deg, #357abd 0%, #1a2a47 100%);
+        color: #fff;
+        padding: 32px 0 16px 0;
+        margin-top: 48px;
+      ">
+      <div
+        style="
+          max-width: 1200px;
+          margin: 0 auto;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: flex-start;
+          justify-content: space-between;
+          gap: 24px;
+          padding: 0 24px;
+        ">
+        <!-- Logo & Nama -->
+        <div style="flex: 1 1 200px; min-width: 180px">
+          <div style="display: flex; align-items: center; gap: 12px">
+            <img
+              src="/assets/img/logo-masjid.png"
+              alt="Logo Masjid"
+              style="
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                background: #fff;
+                object-fit: cover;
+              " />
+            <div>
+              <div style="font-size: 1.2rem; font-weight: bold">DKM Masjid RT 04 RW 021</div>
+              <div style="font-size: 0.95rem">Desa Bojong Gede</div>
+            </div>
+          </div>
+        </div>
+        <!-- Alamat & Kontak -->
+        <div style="flex: 2 1 320px; min-width: 220px">
+          <div style="margin-bottom: 8px">
+            <b>Alamat:</b><br />
+            Jl. Masjid RT 04 RW 021, Desa Bojong Gede, Kec. Bojong Gede, Kab. Bogor, Jawa Barat
+            16922
+          </div>
+          <div>
+            <b>Kontak DKM:</b><br />
+            <a href="tel:+6281234567890" style="color: #ffd84d; text-decoration: underline"
+              >+62 812-3456-7890</a
+            >
+          </div>
+        </div>
+        <!-- Map -->
+        <div style="flex: 1 1 160px; min-width: 120px; text-align: center">
+          <a
+            href="https://maps.app.goo.gl/1nsqZLNS2VxvRgS4A"
+            target="_blank"
+            rel="noopener"
+            title="Lihat lokasi di Google Maps">
+            <img
+              src="/assets/img/maps.png"
+              alt="Map Lokasi Masjid"
+              style="
+                width: 300px;
+                height: 200px;
+                border-radius: 8px;
+                border: 2px solid #ffd84d;
+                object-fit: cover;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+              " />
+            <div style="margin-top: 4px; color: #ffd84d; font-size: 0.95rem">
+              Lihat di Google Maps
+            </div>
+          </a>
+        </div>
+      </div>
+      <div style="text-align: center; color: #ffd84d; font-size: 0.95rem; margin-top: 24px">
+        &copy; 2025 DKM Masjid RT 04 RW 021. All rights reserved.
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <script>
+      // Navbar toggle for responsive menu
+      document.addEventListener('DOMContentLoaded', function () {
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+        const menuIconPath = menuToggle.querySelector('svg path'); // Get the path element of the SVG
+
+        // SVG path data for hamburger and close icon
+        const hamburgerPath = 'M4 6h16M4 12h16M4 18h16';
+        const closePath = 'M6 18L18 6M6 6l12 12';
+
+        if (menuToggle && navLinks && menuIconPath) {
+          menuToggle.addEventListener('click', function () {
+            const isHidden = navLinks.classList.contains('hidden');
+
+            // Toggle visibility and positioning classes
+            navLinks.classList.toggle('hidden');
+            navLinks.classList.toggle('flex');
+            navLinks.classList.toggle('absolute');
+            navLinks.classList.toggle('top-16');
+            navLinks.classList.toggle('left-0');
+            navLinks.classList.toggle('bg-gray-800');
+            navLinks.classList.toggle('p-4');
+            navLinks.classList.toggle('shadow-lg');
+            navLinks.classList.toggle('z-10');
+
+            // Change the SVG icon based on menu state
+            if (isHidden) {
+              menuIconPath.setAttribute('d', closePath); // Menu is opening, show close icon
+            } else {
+              menuIconPath.setAttribute('d', hamburgerPath); // Menu is closing, show hamburger icon
+            }
+          });
+
+          // Function to close the menu and revert icon
+          const closeMenu = () => {
+            if (!navLinks.classList.contains('hidden')) {
+              navLinks.classList.add('hidden');
+              navLinks.classList.remove(
+                'flex',
+                'absolute',
+                'top-16',
+                'left-0',
+                'bg-gray-800',
+                'p-4',
+                'shadow-lg',
+                'z-10'
+              );
+              menuIconPath.setAttribute('d', hamburgerPath); // Revert to hamburger icon
+            }
+          };
+
+          // Close the menu when a link is clicked
+          navLinks.querySelectorAll('a').forEach((link) => {
+            link.addEventListener('click', closeMenu);
+          });
+
+          // Close menu when clicking outside
+          document.addEventListener('click', (event) => {
+            const isClickInsideNav =
+              navLinks.contains(event.target) || menuToggle.contains(event.target);
+            if (!isClickInsideNav) {
+              // Only close if the click is outside
+              closeMenu();
+            }
+          });
+        }
+      });
+    </script>
     <script>
       class HadistView {
         constructor() {
-          this.hadistContainer = document.getElementById("hadist-container");
+          this.hadistContainer = document.getElementById('hadist-container');
         }
 
         renderHadiths(hadiths) {
-          this.hadistContainer.innerHTML = "";
+          this.hadistContainer.innerHTML = '';
           hadiths.forEach((hadith, index) => {
-            const card = document.createElement("div");
-            card.className = "hadist-card";
+            const card = document.createElement('div');
+            card.className = 'hadist-card';
             card.innerHTML = `
               <span class="number-badge">${hadith.number}</span>
-              <div class="arabic-title">${
-                hadith.arabic || hadith.arab || ""
-              }</div>
-              <div class="latin-title">${
-                hadith.latin || hadith.title || ""
-              }</div>
-              <div class="author">${hadith.author || ""}</div>
+              <div class="arabic-title">${hadith.arabic || hadith.arab || ''}</div>
+              <div class="latin-title">${hadith.latin || hadith.title || ''}</div>
+              <div class="author">${hadith.author || ''}</div>
               <div class="mt-3">
                 <span class="inline-block bg-yellow-200 text-blue-900 text-xs font-semibold rounded px-3 py-1 shadow-sm">Klik untuk melihat detail hadist</span>
               </div>
@@ -84,8 +294,8 @@
             this.hadistContainer.appendChild(card);
           });
           // Event klik
-          this.hadistContainer.addEventListener("click", (e) => {
-            const card = e.target.closest(".hadist-card");
+          this.hadistContainer.addEventListener('click', (e) => {
+            const card = e.target.closest('.hadist-card');
             if (card) {
               const hadistId = card.dataset.id;
               window.location.href = `detailHadist.html?id=${hadistId}`;
@@ -97,7 +307,7 @@
       class HadistPresenter {
         constructor(view) {
           this.view = view;
-          this.jsonUrl = "/assets/data/hadist.json"; // Ganti dari API ke file lokal
+          this.jsonUrl = '/assets/data/hadist.json'; // Ganti dari API ke file lokal
           this.init();
         }
 
@@ -112,7 +322,7 @@
             const data = await response.json();
             return data.hadiths;
           } catch (err) {
-            console.error("Gagal mengambil hadist dari JSON lokal:", err);
+            console.error('Gagal mengambil hadist dari JSON lokal:', err);
             return [];
           }
         }
@@ -122,56 +332,56 @@
       const presenter = new HadistPresenter(view);
     </script>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
+      document.addEventListener('DOMContentLoaded', function () {
         document.body.style.opacity = 1;
         // Navbar menu aktif otomatis
         var path = window.location.pathname;
-        if (path.includes("jadwal.html")) {
-          document.getElementById("nav-jadwal").classList.add("active");
-        } else if (path.includes("lokasi.html")) {
-          document.getElementById("nav-lokasi").classList.add("active");
-        } else if (path.includes("hadist.html")) {
-          document.getElementById("nav-hadist").classList.add("active");
+        if (path.includes('jadwal.html')) {
+          document.getElementById('nav-jadwal').classList.add('active');
+        } else if (path.includes('lokasi.html')) {
+          document.getElementById('nav-lokasi').classList.add('active');
+        } else if (path.includes('hadist.html')) {
+          document.getElementById('nav-hadist').classList.add('active');
         }
       });
     </script>
     <script>
       // Theme toggle
-      const themeBtn = document.getElementById("toggle-theme");
+      const themeBtn = document.getElementById('toggle-theme');
       function setTheme(dark) {
         if (dark) {
-          document.body.classList.add("dark-mode");
-          themeBtn.textContent = "☀️";
-          localStorage.setItem("theme", "dark");
+          document.body.classList.add('dark-mode');
+          themeBtn.textContent = '☀️';
+          localStorage.setItem('theme', 'dark');
         } else {
-          document.body.classList.remove("dark-mode");
-          themeBtn.textContent = "🌙";
-          localStorage.setItem("theme", "light");
+          document.body.classList.remove('dark-mode');
+          themeBtn.textContent = '🌙';
+          localStorage.setItem('theme', 'light');
         }
       }
-      themeBtn.addEventListener("click", () => {
-        setTheme(!document.body.classList.contains("dark-mode"));
+      themeBtn.addEventListener('click', () => {
+        setTheme(!document.body.classList.contains('dark-mode'));
       });
-      document.addEventListener("DOMContentLoaded", () => {
-        setTheme(localStorage.getItem("theme") === "dark");
+      document.addEventListener('DOMContentLoaded', () => {
+        setTheme(localStorage.getItem('theme') === 'dark');
       });
     </script>
     <script>
       function showPageSpinner() {
-        var spinner = document.getElementById("page-spinner");
-        var overlay = document.getElementById("page-overlay");
-        if (spinner) spinner.style.removeProperty("display");
-        if (overlay) overlay.style.display = "block";
+        var spinner = document.getElementById('page-spinner');
+        var overlay = document.getElementById('page-overlay');
+        if (spinner) spinner.style.removeProperty('display');
+        if (overlay) overlay.style.display = 'block';
       }
       function hidePageSpinner() {
-        var spinner = document.getElementById("page-spinner");
-        var overlay = document.getElementById("page-overlay");
-        if (spinner) spinner.style.display = "none";
-        if (overlay) overlay.style.display = "none";
+        var spinner = document.getElementById('page-spinner');
+        var overlay = document.getElementById('page-overlay');
+        if (spinner) spinner.style.display = 'none';
+        if (overlay) overlay.style.display = 'none';
       }
 
       // Efek smooth transition (fade-in) pada body saat load
-      document.addEventListener("DOMContentLoaded", function () {
+      document.addEventListener('DOMContentLoaded', function () {
         setTimeout(function () {
           document.body.style.opacity = 1;
           hidePageSpinner();
@@ -180,27 +390,22 @@
 
       // Spinner saat klik link/menu (navigasi antar halaman)
       document.body.addEventListener(
-        "click",
+        'click',
         function (e) {
-          var a = e.target.closest("a");
-          if (
-            a &&
-            a.href &&
-            !a.target &&
-            a.hostname === location.hostname
-          ) {
+          var a = e.target.closest('a');
+          if (a && a.href && !a.target && a.hostname === location.hostname) {
             // Jangan tampilkan spinner jika hanya scroll ke anchor di halaman yang sama
             if (
-              a.hash && 
-              (a.pathname === location.pathname || a.pathname === "" || a.pathname === "/") &&
-              a.hash !== "" &&
-              a.href.split("#")[0] === location.href.split("#")[0]
+              a.hash &&
+              (a.pathname === location.pathname || a.pathname === '' || a.pathname === '/') &&
+              a.hash !== '' &&
+              a.href.split('#')[0] === location.href.split('#')[0]
             ) {
               // Anchor link, tidak perlu spinner
               return;
             }
             // Tampilkan spinner hanya jika benar-benar pindah halaman
-            if (a.href !== location.href && !a.href.endsWith("#")) {
+            if (a.href !== location.href && !a.href.endsWith('#')) {
               showPageSpinner();
               document.body.style.opacity = 0.3;
             }
@@ -208,52 +413,17 @@
         },
         true
       );
-      document.addEventListener("scroll", function() {
-      var footer = document.getElementById("kontak-dkm");
-      var navKontak = document.getElementById("nav-kontak");
-      if (!footer || !navKontak) return;
-      var rect = footer.getBoundingClientRect();
-      if (rect.top < window.innerHeight && rect.bottom > 0) {
-        navKontak.classList.add("active");
-      } else {
-        navKontak.classList.remove("active");
-      }
-    });
+      document.addEventListener('scroll', function () {
+        var footer = document.getElementById('kontak-dkm');
+        var navKontak = document.getElementById('nav-kontak');
+        if (!footer || !navKontak) return;
+        var rect = footer.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          navKontak.classList.add('active');
+        } else {
+          navKontak.classList.remove('active');
+        }
+      });
     </script>
-    <footer id="kontak-dkm" style="background: linear-gradient(90deg, #357abd 0%, #1a2a47 100%); color: #fff; padding: 32px 0 16px 0; margin-top: 48px;">
-    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 24px; padding: 0 24px;">
-      <!-- Logo & Nama -->
-      <div style="flex: 1 1 200px; min-width: 180px;">
-        <div style="display: flex; align-items: center; gap: 12px;">
-          <img src="/assets/img/logo-masjid.png" alt="Logo Masjid" style="width: 48px; height: 48px; border-radius: 50%; background: #fff; object-fit: cover;" />
-          <div>
-            <div style="font-size: 1.2rem; font-weight: bold;">DKM Masjid RT 04 RW 021</div>
-            <div style="font-size: 0.95rem;">Desa Bojong Gede</div>
-          </div>
-        </div>
-      </div>
-      <!-- Alamat & Kontak -->
-      <div style="flex: 2 1 320px; min-width: 220px;">
-        <div style="margin-bottom: 8px;">
-          <b>Alamat:</b><br>
-          Jl. Masjid RT 04 RW 021, Desa Bojong Gede, Kec. Bojong Gede, Kab. Bogor, Jawa Barat 16922
-        </div>
-        <div>
-          <b>Kontak DKM:</b><br>
-          <a href="tel:+6281234567890" style="color: #ffd84d; text-decoration: underline;">+62 812-3456-7890</a>
-        </div>
-      </div>
-      <!-- Map -->
-      <div style="flex: 1 1 160px; min-width: 120px; text-align: center;">
-        <a href="https://maps.app.goo.gl/1dTUben6EVyM1gRZ6" target="_blank" rel="noopener" title="Lihat lokasi di Google Maps">
-          <img src="/assets/img/map-preview.png" alt="Map Lokasi Masjid" style="width: 120px; height: 80px; border-radius: 8px; border: 2px solid #ffd84d; object-fit: cover; box-shadow: 0 2px 8px rgba(0,0,0,0.12);" />
-          <div style="margin-top: 4px; color: #ffd84d; font-size: 0.95rem;">Lihat di Google Maps</div>
-        </a>
-      </div>
-    </div>
-    <div style="text-align: center; color: #ffd84d; font-size: 0.95rem; margin-top: 24px;">
-      &copy; 2025 DKM Masjid RT 04 RW 021. All rights reserved.
-    </div>
-  </footer>
   </body>
 </html>
