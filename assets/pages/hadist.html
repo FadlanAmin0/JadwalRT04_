@@ -288,7 +288,8 @@
             card.className = 'hadist-card';
             card.innerHTML = `
               <span class="number-badge">${hadith.number}</span>
-              <div class="arabic-title">${hadith.arabic || hadith.arab || ''}</div>
+              <h2 class="text-lg font-semibold mb-1">${hadith.title}</h2>
+              
               <div class="latin-title">${hadith.latin || hadith.title || ''}</div>
               <div class="author">${hadith.author || ''}</div>
               <div class="mt-3">

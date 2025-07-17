@@ -2,63 +2,111 @@
   "hadiths": [
     {
       "number": 1,
-      "arab": "إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ",
-      "translation": "Sesungguhnya amal itu tergantung niatnya. (HR. Bukhari dan Muslim)."
-    },
-    {
-      "number": 2,
-      "arab": "مَنْ سَلِمَ الْمُسْلِمُونَ مِنْ لِسَانِهِ وَيَدِهِ",
-      "translation": "Seorang muslim adalah yang kaum muslimin selamat dari lisan dan tangannya."
-    },
-    {
-      "number": 3,
-      "arab": "الدِّينُ يُسْرٌ",
-      "translation": "Agama itu mudah."
-    },
-    {
-      "number": 4,
-      "arab": " مَنْ خَرَجَ فِى طَلَبِ الْعِلْمِ فَهُوَ فِى سَبِيلِ اللَّهِ حَتَّى يَرْجِعَ",
-      "translation": "Barang siapa yang keluar (rumah) untuk mencari ilmu maka dia termasuk orang yang berada di jalan Allah sampai dia pulang."
-    },
-    {
-      "number": 5,
-      "arab": "وَالْمُؤْمِنُونَ يُسْرٌ",
-      "translation": "Dan kaum muslimin itu mudah."
-    },
-    {
-      "number": 6,
+      "title": "Hadist Tentang Silaturahmi",
       "arab": "تَعْبُدُ اللَّهَ لاَ تُشْرِكُ بِهِ شَيْئًا، وَتُقِيمُ الصَّلاَةَ، وَتُؤْتِي الزَّكَاةَ، وَتَصِلُ الرَّحِمَ، ذَرْهَ",
       "translation": "Beribadahlah pada Allah SWT dengan sempurna jangan syirik, dirikanlah sholat, tunaikan zakat, dan jalinlah silaturahmi dengan orangtua dan saudara. (HR Bukhari)"
     },
     {
-      "number": 7,
-      "arab": "وَاعْلَمْ أَنَّ النَّصْرَ مَعَ الصَّبْرِ، وَأَنَّ الْفَرَجَ مَعَ الْكَرْبِ، وَأَنَّ مَعَ الْعُسْرِ يُسْرًا",
-      "translation": "Ketahuilah bahwasannya kemenangan itu bersama kesabaran, dan jalan keluar itu bersama kesulitan, dan bahwasanya bersama kesulitan ada kemudahan. (Hr. Tirmidzi)"
+      "number": 2,
+      "title": "Hadist Tentang Kehidupan",
+      "arab": "وَاعْلَمْ أَنَّ النَّصْرَ مَعَ الصَّبْرِ، وَأَنَّ الْفَرَجَ مَعَ الْكَرْبِ، وَأَنَّ مَعَ الْعُسْرِ يُسْرًا",
+      "translation": "\"Ketahuilah bahwasannya kemenangan itu bersama kesabaran, dan jalan keluar itu bersama kesulitan, dan bahwasanya bersama kesulitan ada kemudahan\". (Hr. Tirmidzi)."
     },
     {
-      "number": 8,
+      "number": 3,
+      "title": "Hadist Tentang Bersyukur",
       "arab": "مَنْ لَمْ يَشْكُرِ الْقَلِيلَ لَمْ يَشْكُرِ الْكَثِيرَ",
       "translation": "Barang siapa yang tidak mensyukuri yang sedikit, maka ia tidak akan mampu mensyukuri sesuatu yang banyak. (HR. Ahmad)"
     },
     {
+      "number": 4,
+      "title": "Hadist Tentang Shalawat kepada Rasullullah SAW",
+      "arab": " مَنْ صَلَّى عَلَيَّ وَاحِدَةً صَلَّى اللهُ عَلَيْهِ عشرا",
+      "translation": "Barang siapa yang bersalawat kepadaku satu kali, niscaya Allah bersalawat kepadanya sepuluh kali. (HR. Muslim)"
+    },
+    {
+      "number": 5,
+      "title": "Hadist Tentang Bersikap Baik kepada Tetangga",
+      "arab": "لاَ يَدْخُلُ الْجَنَّةَ مَنْ لاَ يَأْمَنُ جَارُهُ بَوَائِقَهُ",
+      "translation": "Tidak masuk surga orang yang tetangganya tidak merasa aman karena perbuatannya. (HR. Muslim)"
+    },
+    {
+      "number": 6,
+      "title": "Hadist Tentang Menuntut Ilmu",
+      "arab": "مَنْ خَرَجَ فِى طَلَبِ الْعِلْمِ فَهُوَ فِى سَبِيلِ اللَّهِ حَتَّى يَرْجِعَ",
+      "translation": "Barang siapa yang keluar (rumah) untuk menuntut ilmu, maka ia berada di jalan Allah sampai ia kembali. (HR. Ibnu Majah)"
+    },
+    {
+      "number": 7,
+      "title": "Hadist Tentang Menjaga Lisan",
+      "arab": "أَكْثَرُ خَطَايَا ابْنِ آدَمَ فِي لِسَانِهِ",
+      "translation": "\"Ketahuilah bahwasannya banyaknya dosa anak Adam itu disebabkan oleh lisannya\". (HR. Tirmidzi)."
+    },
+    {
+      "number": 8,
+      "title": "Hadist Tentang Sabar dan Pemaaf",
+      "arab": "أَفْضَلُ الإِيمَانِ الصَّبْرُ وَالسَّمَاحَةُ",
+      "translation": "\"Iman yang utama adalah sabar dan pemaaf.\" (HR. Bukhari dan Ad-Dailami)"
+    },
+    {
       "number": 9,
-      "arab": "الماهر بالقران مع السفرة الكرام البررة",
-      "translation": "Orang yang pintar membaca Alquran akan tinggal bersama Jibril. (HR. Bukhari Muslim)"
+      "title": "Hadist Tentang Hari Kiamat",
+      "arab": "لاَ تَقُومُ السَّاعَةُ عَلَى أَحَدٍ يَقُولُ : اَللهُ اَللهُ",
+      "translation": "\"Tidak akan datang kiamat selama masih ada yang mengucap Allah... Allah...\" (HR. Muslim)"
     },
     {
       "number": 10,
-      "arab": "افضل الايمان الصبر والسماحة",
-      "translation": "Iman yang utama adalah sabar dan pemaaf. (HR Bukhari dan Ad Dailami)"
+      "title": "Hadist Tentang Menahan Amarah",
+      "arab": "لاَ تَغْضَبْ وَلَكَ الْجَنَّةُ",
+      "translation": "\"Jangan marah, maka kamu akan masuk surga.\" (HR Ath-Thabrani)"
     },
     {
       "number": 11,
-      "arab": "مَنْ صَلَّى عَلَيَّ وَاحِدَةً صَلَّى اللهُ عَلَيْهِ عشرا",
-      "translation": "Barangsiapa bersalawat kepadaku satu kali, niscaya Allah bersalawat kepadanya sepuluh kali. (HR. Muslim)"
+      "title": "Hadist Tentang Sedekah",
+      "arab": "الْصَّدَقَةُ تُطْفِئُ غَضَبَ الرَّبِّ",
+      "translation": "\"Sedekah itu memadamkan amarah Allah.\" (HR. Tirmidzi)"
     },
     {
       "number": 12,
-      "arab": "لاَ يَدْخُلُ الْجَنَّةَ مَنْ لاَ يَأْمَنُ جَارُهُ بَوَائِقَهُ",
-      "translation": "Tidak masuk surga orang yang tetangganya tidak merasa aman karena perbuatannya. (HR. Muslim)"
+      "title": "Hadist Tentang Berbuat Baik",
+      "arab": "كُلُّ مَعْرُوْفٍ صَدَقَةٌ",
+      "translation": "\"Setiap kebaikan adalah sedekah.\" (HR. Bukhari dan Muslim)"
+    },
+    {
+      "number": 13,
+      "title": "Hadist Tentang Senyum adalah Ibadah",
+      "arab": "تَبَسُّمُكَ فِى وَجْهِ أَخِيْكَ صَدَقَةٌ",
+      "translation": "\"Senyummu di wajah saudaramu adalah sedekah.\" (HR Tirmidzi dan Ibnu Hibban)"
+    },
+    {
+      "number": 14,
+      "title": "Hadist Tentang Menolong Sesama",
+      "arab": "اللّٰهُ فِي عَوْنِ الْعَبْدِ مَا كَانَ الْعَبْدُ فِي عَوْنِ أَخِيْهِ",
+      "translation": "\"Allah akan senantiasa menolong hamba-Nya selama hamba-Nya menolong saudaranya.\" (HR. Muslim)"
+    },
+    {
+      "number": 15,
+      "title": "Hadist Tentang Bersedekah",
+      "arab": "مَا نَقَصَتْ صَدَقَةٌ مِنْ مَالٍ وَمَا زَادَ اللهُ عَبْدًا بِعَفْوٍ إِلاَّ عِزًّا وَمَا تَوَاضَعَ أَحَدٌ لِلَّهِ إِلاَّ رَفَعَهُ اللهُ",
+      "translation": "\"Tidaklah sedekah itu mengurangi harta, dan tidaklah Allah menambah bagi seorang hamba dengan pemberian maafnya (kepada saudaranya) kecuali kemuliaan, serta tidaklah seseorang merendahkan diri di (hadapan) Allāh kecuali Dia akan meninggikan (derajat) nya\" (HR. Muslim)"
+    },
+    {
+      "number": 16,
+      "title": "Hadist Tentang Menyebarkan Salam",
+      "arab": "اَفْشُوْا السَّلاَمَ بَيْنَكُمْ",
+      "translation": "\"Sebarkanlah salam di antara kamu.\" (HR. Muslim)"
+    },
+    {
+      "number": 17,
+      "title": "Hadist Tentang Keutamaan Memberi",
+      "arab": "الْيَدُ الْعُلْيَا خَيْرٌ مِنَ الْيَدِ السُّفْلَى",
+      "translation": "\"Tangan di atas (memberi) lebih baik daripada tangan di bawah (menerima).\" (HR. Bukhori dan Muslim)"
+    },
+    {
+      "number": 18,
+      "title": "Hadist Tentang Larangan berbuat Kerusakan",
+      "arab": "لاَ ضَرَرَ وَلاَ ضِرَارَ",
+      "translation": "\"Katakanlah yang benar walau pahit sekalipun.\" (HR. Abu Daud)"
     }
   ]
 }
