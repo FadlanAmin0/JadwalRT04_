@@ -14,7 +14,12 @@
     <header>
       <nav class="bg-gray-800 p-4">
         <div class="container mx-auto flex justify-between items-center max-w-6xl">
-          <a href="index.html" id="logo-home" class="**text-white** text-2xl font-bold">🌐 Logo</a>
+          <a href="/index.html" id="logo-home" class="**text-white** text-2xl font-bold">
+            <img 
+              src="/assets/img/logo.png" 
+              alt="Logo" 
+              class="h-8 md:h-10 lg:h-12 w-auto object-contain"/>
+          </a>
 
           <button id="menu-toggle" class="lg:hidden focus:outline-none" aria-label="Toggle menu">
             <svg
@@ -324,40 +329,85 @@
     }
   });
   </script>
-  <footer id="kontak-dkm" style="background: linear-gradient(90deg, #357abd 0%, #1a2a47 100%); color: #fff; padding: 32px 0 16px 0; margin-top: 48px;">
-    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 24px; padding: 0 24px;">
-      <!-- Logo & Nama -->
-      <div style="flex: 1 1 200px; min-width: 180px;">
-        <div style="display: flex; align-items: center; gap: 12px;">
-          <img src="/assets/img/logo-masjid.png" alt="Logo Masjid" style="width: 48px; height: 48px; border-radius: 50%; background: #fff; object-fit: cover;" />
-          <div>
-            <div style="font-size: 1.2rem; font-weight: bold;">DKM Masjid RT 04 RW 021</div>
-            <div style="font-size: 0.95rem;">Desa Bojong Gede</div>
+  <footer
+      id="kontak-dkm"
+      style="
+        background: linear-gradient(90deg, #357abd 0%, #1a2a47 100%);
+        color: #fff;
+        padding: 32px 0 16px 0;
+        margin-top: 48px;
+      ">
+      <div
+        style="
+          max-width: 1200px;
+          margin: 0 auto;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: flex-start;
+          justify-content: space-between;
+          gap: 24px;
+          padding: 0 24px;
+        ">
+        <!-- Logo & Nama -->
+        <div style="flex: 1 1 200px; min-width: 180px">
+          <div style="display: flex; align-items: center; gap: 12px">
+            <img
+              src="/assets/img/logo.png"
+              alt="Logo Masjid"
+              style="
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                background: #fff;
+                object-fit: cover;
+              " />
+            <div>
+              <div style="font-size: 1.2rem; font-weight: bold">DKM Mushola At-Taqwa RT 04 RW 021</div>
+              <div style="font-size: 0.95rem">Desa Bojong Gede</div>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Alamat & Kontak -->
-      <div style="flex: 2 1 320px; min-width: 220px;">
-        <div style="margin-bottom: 8px;">
-          <b>Alamat:</b><br>
-          Jl. Masjid RT 04 RW 021, Desa Bojong Gede, Kec. Bojong Gede, Kab. Bogor, Jawa Barat 16922
+        <!-- Alamat & Kontak -->
+        <div style="flex: 2 1 320px; min-width: 220px">
+          <div style="margin-bottom: 8px">
+            <b>Alamat:</b><br />
+            Jl. Cempaka 2 RT 04 RW 021, Desa Bojong Gede, Kec. Bojong Gede, Kab. Bogor, Jawa Barat
+            16922
+          </div>
+          <div>
+            <b>Kontak DKM:</b><br />
+            <a href="tel:+6281234567890" style="color: #ffd84d; text-decoration: underline"
+              >+62 822-1036-8161</a
+            >
+          </div>
         </div>
-        <div>
-          <b>Kontak DKM:</b><br>
-          <a href="tel:+6281234567890" style="color: #ffd84d; text-decoration: underline;">+62 812-3456-7890</a>
+        <!-- Map -->
+        <div style="flex: 1 1 160px; min-width: 120px; text-align: center">
+          <a
+            href="https://maps.app.goo.gl/1nsqZLNS2VxvRgS4A"
+            target="_blank"
+            rel="noopener"
+            title="Lihat lokasi di Google Maps">
+            <img
+              src="/assets/img/maps.png"
+              alt="Map Lokasi Masjid"
+              style="
+                width: 300px;
+                height: 200px;
+                border-radius: 8px;
+                border: 2px solid #ffd84d;
+                object-fit: cover;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+              " />
+            <div style="margin-top: 4px; color: #ffd84d; font-size: 0.95rem">
+              Lihat di Google Maps
+            </div>
+          </a>
         </div>
       </div>
-      <!-- Map -->
-      <div style="flex: 1 1 160px; min-width: 120px; text-align: center;">
-        <a href="https://maps.app.goo.gl/1dTUben6EVyM1gRZ6" target="_blank" rel="noopener" title="Lihat lokasi di Google Maps">
-          <img src="/assets/img/map-preview.png" alt="Map Lokasi Masjid" style="width: 120px; height: 80px; border-radius: 8px; border: 2px solid #ffd84d; object-fit: cover; box-shadow: 0 2px 8px rgba(0,0,0,0.12);" />
-          <div style="margin-top: 4px; color: #ffd84d; font-size: 0.95rem;">Lihat di Google Maps</div>
-        </a>
+      <div style="text-align: center; color: #ffd84d; font-size: 0.95rem; margin-top: 24px">
+        &copy; 2025 DKM Musholla At-Taqwa RT 04 RW 021. All rights reserved.
       </div>
-    </div>
-    <div style="text-align: center; color: #ffd84d; font-size: 0.95rem; margin-top: 24px;">
-      &copy; 2025 DKM Masjid RT 04 RW 021. All rights reserved.
-    </div>
-  </footer>
+    </footer>
   </body>
 </html>
